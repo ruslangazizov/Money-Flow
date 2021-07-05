@@ -13,6 +13,10 @@
 		4428BE0E2690A698009A4B6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4428BE0C2690A698009A4B6A /* Main.storyboard */; };
 		4428BE102690A699009A4B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4428BE0F2690A699009A4B6A /* Assets.xcassets */; };
 		4428BE132690A699009A4B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4428BE112690A699009A4B6A /* LaunchScreen.storyboard */; };
+		449BE682269352DA00C0F2A1 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BE67E269352DA00C0F2A1 /* CategoryCollectionViewCell.swift */; };
+		449BE683269352DA00C0F2A1 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 449BE67F269352DA00C0F2A1 /* CategoryCollectionViewCell.xib */; };
+		449BE684269352DA00C0F2A1 /* Categories images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 449BE680269352DA00C0F2A1 /* Categories images.xcassets */; };
+		449BE685269352DA00C0F2A1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449BE681269352DA00C0F2A1 /* Category.swift */; };
 		44C40F592692192F007A1AB3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C40F582692192F007A1AB3 /* Profile.storyboard */; };
 		44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F5A26921953007A1AB3 /* ProfileViewController.swift */; };
 		44C40F5D26921A88007A1AB3 /* Expenses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C40F5C26921A88007A1AB3 /* Expenses.storyboard */; };
@@ -34,6 +38,10 @@
 		4428BE0F2690A699009A4B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4428BE122690A699009A4B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4428BE142690A699009A4B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449BE67E269352DA00C0F2A1 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		449BE67F269352DA00C0F2A1 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		449BE680269352DA00C0F2A1 /* Categories images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Categories images.xcassets"; sourceTree = "<group>"; };
+		449BE681269352DA00C0F2A1 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		44C40F582692192F007A1AB3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		44C40F5A26921953007A1AB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		44C40F5C26921A88007A1AB3 /* Expenses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Expenses.storyboard; sourceTree = "<group>"; };
@@ -101,11 +109,23 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		449BE686269352F400C0F2A1 /* Category Cell */ = {
+			isa = PBXGroup;
+			children = (
+				449BE67E269352DA00C0F2A1 /* CategoryCollectionViewCell.swift */,
+				449BE67F269352DA00C0F2A1 /* CategoryCollectionViewCell.xib */,
+			);
+			path = "Category Cell";
+			sourceTree = "<group>";
+		};
 		44C40F54269218D0007A1AB3 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
-				44C40F5C26921A88007A1AB3 /* Expenses.storyboard */,
+				449BE686269352F400C0F2A1 /* Category Cell */,
+				449BE680269352DA00C0F2A1 /* Categories images.xcassets */,
+				449BE681269352DA00C0F2A1 /* Category.swift */,
 				44C40F5E26921A9C007A1AB3 /* ExpensesViewController.swift */,
+				44C40F5C26921A88007A1AB3 /* Expenses.storyboard */,
 			);
 			path = Expenses;
 			sourceTree = "<group>";
@@ -200,7 +220,9 @@
 				44C40F6926921C5D007A1AB3 /* Settings.storyboard in Resources */,
 				4428BE132690A699009A4B6A /* LaunchScreen.storyboard in Resources */,
 				4428BE102690A699009A4B6A /* Assets.xcassets in Resources */,
+				449BE683269352DA00C0F2A1 /* CategoryCollectionViewCell.xib in Resources */,
 				44C40F592692192F007A1AB3 /* Profile.storyboard in Resources */,
+				449BE684269352DA00C0F2A1 /* Categories images.xcassets in Resources */,
 				4428BE0E2690A698009A4B6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,9 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
+				449BE685269352DA00C0F2A1 /* Category.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
+				449BE682269352DA00C0F2A1 /* CategoryCollectionViewCell.swift in Sources */,
 				44C40F6326921BD5007A1AB3 /* IncomesViewController.swift in Sources */,
 				44C40F5F26921A9C007A1AB3 /* ExpensesViewController.swift in Sources */,
 				4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */,
