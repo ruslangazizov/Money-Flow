@@ -23,6 +23,12 @@
 		44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F6626921C0F007A1AB3 /* GoalsViewController.swift */; };
 		44C40F6926921C5D007A1AB3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C40F6826921C5D007A1AB3 /* Settings.storyboard */; };
 		44C40F6B26921C78007A1AB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */; };
+		E22285702693897B0023F727 /* ProfileScreenboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E222856F2693897B0023F727 /* ProfileScreenboard.storyboard */; };
+		E2228572269389C60023F727 /* ProfileeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2228571269389C60023F727 /* ProfileeViewController.swift */; };
+		E222857426938A030023F727 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E222857326938A030023F727 /* CategoryStoryboard.storyboard */; };
+		E222857626938A320023F727 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222857526938A320023F727 /* CategoryViewController.swift */; };
+		E222857826938A860023F727 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222857726938A860023F727 /* CategoryTableViewCell.swift */; };
+		E222857C26938B2E0023F727 /* Templates Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E222857B26938B2E0023F727 /* Templates Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,12 @@
 		44C40F6626921C0F007A1AB3 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		44C40F6826921C5D007A1AB3 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E222856F2693897B0023F727 /* ProfileScreenboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreenboard.storyboard; sourceTree = "<group>"; };
+		E2228571269389C60023F727 /* ProfileeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileeViewController.swift; sourceTree = "<group>"; };
+		E222857326938A030023F727 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
+		E222857526938A320023F727 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		E222857726938A860023F727 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		E222857B26938B2E0023F727 /* Templates Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Templates Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 		4428BE052690A698009A4B6A /* Money Flow */ = {
 			isa = PBXGroup;
 			children = (
+				E222856E269389220023F727 /* ScreenTemplates */,
 				44C40F572692190E007A1AB3 /* Settings */,
 				44C40F5626921904007A1AB3 /* Goals */,
 				44C40F55269218EA007A1AB3 /* Incomes */,
@@ -137,6 +150,35 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		E222856E269389220023F727 /* ScreenTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				E222857E26938CA40023F727 /* RuslanTemplates */,
+				E222857D26938C810023F727 /* MaratTemplates */,
+			);
+			path = ScreenTemplates;
+			sourceTree = "<group>";
+		};
+		E222857D26938C810023F727 /* MaratTemplates */ = {
+			isa = PBXGroup;
+			children = (
+				E222857B26938B2E0023F727 /* Templates Assets.xcassets */,
+				E222857726938A860023F727 /* CategoryTableViewCell.swift */,
+				E222857526938A320023F727 /* CategoryViewController.swift */,
+				E222857326938A030023F727 /* CategoryStoryboard.storyboard */,
+				E2228571269389C60023F727 /* ProfileeViewController.swift */,
+				E222856F2693897B0023F727 /* ProfileScreenboard.storyboard */,
+			);
+			path = MaratTemplates;
+			sourceTree = "<group>";
+		};
+		E222857E26938CA40023F727 /* RuslanTemplates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RuslanTemplates;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -195,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C40F6526921BFE007A1AB3 /* Goals.storyboard in Resources */,
+				E222857426938A030023F727 /* CategoryStoryboard.storyboard in Resources */,
+				E22285702693897B0023F727 /* ProfileScreenboard.storyboard in Resources */,
 				44C40F5D26921A88007A1AB3 /* Expenses.storyboard in Resources */,
 				44C40F6126921BB9007A1AB3 /* Incomes.storyboard in Resources */,
 				44C40F6926921C5D007A1AB3 /* Settings.storyboard in Resources */,
@@ -202,6 +246,7 @@
 				4428BE102690A699009A4B6A /* Assets.xcassets in Resources */,
 				44C40F592692192F007A1AB3 /* Profile.storyboard in Resources */,
 				4428BE0E2690A698009A4B6A /* Main.storyboard in Resources */,
+				E222857C26938B2E0023F727 /* Templates Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,12 +257,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E222857626938A320023F727 /* CategoryViewController.swift in Sources */,
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
 				44C40F6326921BD5007A1AB3 /* IncomesViewController.swift in Sources */,
+				E222857826938A860023F727 /* CategoryTableViewCell.swift in Sources */,
 				44C40F5F26921A9C007A1AB3 /* ExpensesViewController.swift in Sources */,
+				E2228572269389C60023F727 /* ProfileeViewController.swift in Sources */,
 				4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */,
 				44C40F6B26921C78007A1AB3 /* SettingsViewController.swift in Sources */,
 			);
