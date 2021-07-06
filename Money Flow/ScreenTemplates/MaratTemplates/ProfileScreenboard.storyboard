@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view opaque="NO" clipsSubviews="YES" alpha="0.80000001192092896" tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TaK-ey-4gb">
-                                        <rect key="frame" x="28" y="230" width="329" height="128"/>
+                                        <rect key="frame" x="28" y="230" width="330" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZU-ti-0g8">
@@ -53,16 +53,10 @@
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L6y-oc-DKv">
-                                <rect key="frame" x="12" y="388" width="362" height="2"/>
+                                <rect key="frame" x="12" y="372" width="362" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-zn-jCN">
-                                <rect key="frame" x="12" y="408" width="366" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Image"/>
-                                <state key="highlighted" title="kk"/>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e45-96-7dA">
                                 <rect key="frame" x="16" y="500" width="358" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -112,6 +106,24 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vkn-Be-5kH">
+                                <rect key="frame" x="28" y="393" width="330" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-zn-jCN">
+                                        <rect key="frame" x="0.0" y="0.0" width="329" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Получить подробный отчёт">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <state key="highlighted" title="kk"/>
+                                        <connections>
+                                            <action selector="getReportButtonAction:" destination="E0m-mi-rJF" eventType="touchUpInside" id="zsR-X1-DFk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P5p-eT-tXQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -119,22 +131,24 @@
                     <tabBarItem key="tabBarItem" title="" image="Profile" id="7Sg-tn-c9H"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="behindButtonView" destination="Vkn-Be-5kH" id="Rhs-uE-RRE"/>
                         <outlet property="mainTextLabel" destination="on4-jd-COE" id="cZG-FT-j4z"/>
                         <outlet property="mainView" destination="lEr-ws-6tB" id="ecT-PR-CLq"/>
                         <outlet property="panelView" destination="TaK-ey-4gb" id="zn5-i6-5u5"/>
-                        <outlet property="statisticsButton" destination="eqz-zn-jCN" id="JQo-xc-zoH"/>
                         <outlet property="tableView" destination="e45-96-7dA" id="UbM-RP-Uj9"/>
                         <outlet property="valueLabel" destination="B5U-Q6-R8p" id="et5-jK-RIF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYf-b6-hOf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10" y="48"/>
+            <point key="canvasLocation" x="9.2307692307692299" y="47.630331753554501"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="650" height="118"/>
         <image name="Profile" width="24" height="26"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
