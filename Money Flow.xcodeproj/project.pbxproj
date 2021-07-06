@@ -25,6 +25,13 @@
 		44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F6626921C0F007A1AB3 /* GoalsViewController.swift */; };
 		44C40F6926921C5D007A1AB3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C40F6826921C5D007A1AB3 /* Settings.storyboard */; };
 		44C40F6B26921C78007A1AB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */; };
+		44E0F7DE26945942003E538F /* PopupCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7DD26945942003E538F /* PopupCollectionViewController.swift */; };
+		44E0F7E226945A02003E538F /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7E026945A02003E538F /* EmojiCell.swift */; };
+		44E0F7E326945A02003E538F /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E0F7E126945A02003E538F /* EmojiCell.xib */; };
+		44E0F7E526945A44003E538F /* PopupScreenTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7E426945A44003E538F /* PopupScreenTemplate.swift */; };
+		44E0F7E72694653F003E538F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E0F7E62694653F003E538F /* Media.xcassets */; };
+		44E0F7EB2694681B003E538F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7E92694681B003E538F /* CategoryCell.swift */; };
+		44E0F7EC2694681B003E538F /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E0F7EA2694681B003E538F /* CategoryCell.xib */; };
 		E22285702693897B0023F727 /* ProfileScreenboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E222856F2693897B0023F727 /* ProfileScreenboard.storyboard */; };
 		E2228572269389C60023F727 /* ProfileeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2228571269389C60023F727 /* ProfileeViewController.swift */; };
 		E222857426938A030023F727 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E222857326938A030023F727 /* CategoryStoryboard.storyboard */; };
@@ -53,6 +60,13 @@
 		44C40F6626921C0F007A1AB3 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		44C40F6826921C5D007A1AB3 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		44E0F7DD26945942003E538F /* PopupCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupCollectionViewController.swift; sourceTree = "<group>"; };
+		44E0F7E026945A02003E538F /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
+		44E0F7E126945A02003E538F /* EmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
+		44E0F7E426945A44003E538F /* PopupScreenTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreenTemplate.swift; sourceTree = "<group>"; };
+		44E0F7E62694653F003E538F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		44E0F7E92694681B003E538F /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		44E0F7EA2694681B003E538F /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		E222856F2693897B0023F727 /* ProfileScreenboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileScreenboard.storyboard; sourceTree = "<group>"; };
 		E2228571269389C60023F727 /* ProfileeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileeViewController.swift; sourceTree = "<group>"; };
 		E222857326938A030023F727 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
@@ -119,6 +133,10 @@
 		449BE69626939A0A00C0F2A1 /* RuslanTemplates */ = {
 			isa = PBXGroup;
 			children = (
+				44E0F7E8269467E7003E538F /* Category */,
+				44E0F7DF269459DA003E538F /* Emoji */,
+				44E0F7DD26945942003E538F /* PopupCollectionViewController.swift */,
+				44E0F7E426945A44003E538F /* PopupScreenTemplate.swift */,
 				449BE69926939A0A00C0F2A1 /* AddScreenViewController.swift */,
 				449BE69826939A0A00C0F2A1 /* AddScreen.storyboard */,
 			);
@@ -161,11 +179,30 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		44E0F7DF269459DA003E538F /* Emoji */ = {
+			isa = PBXGroup;
+			children = (
+				44E0F7E026945A02003E538F /* EmojiCell.swift */,
+				44E0F7E126945A02003E538F /* EmojiCell.xib */,
+			);
+			path = Emoji;
+			sourceTree = "<group>";
+		};
+		44E0F7E8269467E7003E538F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				44E0F7E92694681B003E538F /* CategoryCell.swift */,
+				44E0F7EA2694681B003E538F /* CategoryCell.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		E222856E269389220023F727 /* ScreenTemplates */ = {
 			isa = PBXGroup;
 			children = (
 				449BE69626939A0A00C0F2A1 /* RuslanTemplates */,
 				E222857D26938C810023F727 /* MaratTemplates */,
+				44E0F7E62694653F003E538F /* Media.xcassets */,
 			);
 			path = ScreenTemplates;
 			sourceTree = "<group>";
@@ -240,7 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				44C40F6526921BFE007A1AB3 /* Goals.storyboard in Resources */,
+				44E0F7EC2694681B003E538F /* CategoryCell.xib in Resources */,
 				449BE69C26939A0A00C0F2A1 /* AddScreen.storyboard in Resources */,
+				44E0F7E72694653F003E538F /* Media.xcassets in Resources */,
+				44E0F7E326945A02003E538F /* EmojiCell.xib in Resources */,
 				E222857426938A030023F727 /* CategoryStoryboard.storyboard in Resources */,
 				E22285702693897B0023F727 /* ProfileScreenboard.storyboard in Resources */,
 				44C40F5D26921A88007A1AB3 /* Expenses.storyboard in Resources */,
@@ -260,14 +300,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E0F7E526945A44003E538F /* PopupScreenTemplate.swift in Sources */,
 				E222857626938A320023F727 /* CategoryViewController.swift in Sources */,
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
+				44E0F7DE26945942003E538F /* PopupCollectionViewController.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
 				44C40F6326921BD5007A1AB3 /* IncomesViewController.swift in Sources */,
 				E222857826938A860023F727 /* CategoryTableViewCell.swift in Sources */,
+				44E0F7E226945A02003E538F /* EmojiCell.swift in Sources */,
 				44C40F5F26921A9C007A1AB3 /* ExpensesViewController.swift in Sources */,
+				44E0F7EB2694681B003E538F /* CategoryCell.swift in Sources */,
 				449BE69A26939A0A00C0F2A1 /* AddScreenViewController.swift in Sources */,
 				E2228572269389C60023F727 /* ProfileeViewController.swift in Sources */,
 				4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */,

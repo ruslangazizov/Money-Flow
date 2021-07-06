@@ -89,11 +89,9 @@
                     <tabBarItem key="tabBarItem" title="" image="Profile" id="Aem-DF-Ty9"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="categoryLabel" destination="1YU-ws-R9q" id="H4x-dU-8th"/>
                         <outlet property="choiceTextField" destination="Tr1-cx-BEZ" id="E0i-6I-Js3"/>
                         <outlet property="costTextField" destination="J2M-45-dVg" id="JOO-8L-JAT"/>
                         <outlet property="dataTextField" destination="uO0-gY-hje" id="nPw-tS-nIf"/>
-                        <outlet property="mainView" destination="Jv6-47-z4h" id="7uw-aj-cdt"/>
                         <outlet property="nameTextField" destination="iCq-xp-C0n" id="MG3-Jo-0EG"/>
                         <outlet property="screenNameLabel" destination="1YU-ws-R9q" id="fdl-u6-dRP"/>
                     </connections>
@@ -102,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="292.30769230769232" y="18.48341232227488"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Popup Collection View Controller-->
         <scene sceneID="sHx-3t-g76">
             <objects>
-                <collectionViewController id="1CV-cc-lXp" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="PopupCollectionViewController" id="1CV-cc-lXp" customClass="PopupCollectionViewController" customModule="Money_Flow" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="cwv-t5-di1">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
