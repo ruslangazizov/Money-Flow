@@ -1,19 +1,19 @@
 //
-//  CategoryCollectionViewCell.swift
+//  CategoryCell.swift
 //  Money Flow
 //
-//  Created by Руслан on 05.07.2021.
+//  Created by Руслан on 06.07.2021.
 //
 
 import UIKit
 
-class CategoryCollectionViewCell: UICollectionViewCell {
+class CategoryCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var categoryNameLabel: UILabel!
     
-    weak var delegate: ExpensesViewController?
+    weak var delegate: PopupScreenViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,9 +26,10 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         backgroundImageView.layer.cornerRadius = 35
         layer.cornerRadius = 15
     }
-
-    @IBAction func categoryButtonAction(_ sender: Any) {
-//        guard let addScreenViewController = delegate?.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
-//        delegate?.navigationController?.pushViewController(addScreenViewController, animated: true)
+    
+    @IBAction func cellButtonAction(_ sender: Any) {
+        delegate?.updateChoiceWith(categoryNameLabel.text ?? "")
+        delegate?.dismiss(animated: true)
     }
+
 }

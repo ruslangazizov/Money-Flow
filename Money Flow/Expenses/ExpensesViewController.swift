@@ -21,8 +21,7 @@ class ExpensesViewController: UIViewController {
     private let widthBetweenItemsInLine: CGFloat = 25
     private var leftAndRigthMargin: CGFloat?
     
-    private let categories: [Category] = [Category(name: "Транспорт", image: UIImage(named: "Car") ??
-                                              UIImage(), backgroundColor: #colorLiteral(red: 0.9731522202, green: 0.9238572717, blue: 0.9159588218, alpha: 1)),
+    private let categories: [Category] = [Category(name: "Транспорт", image: UIImage(named: "Car") ??                                           UIImage(), backgroundColor: #colorLiteral(red: 0.9731522202, green: 0.9238572717, blue: 0.9159588218, alpha: 1)),
                                           Category(name: "Шоппинг", image: UIImage(named: "Bags") ?? UIImage(), backgroundColor: #colorLiteral(red: 0.9981009364, green: 0.963594377, blue: 0.9121462703, alpha: 1)),
                                           Category(name: "Продукты", image: UIImage(named: "Banana") ?? UIImage(), backgroundColor: #colorLiteral(red: 0.8349118829, green: 0.9203750491, blue: 0.9531015754, alpha: 1)),
                                           Category(name: "Здоровье", image: UIImage(named: "Pill") ?? UIImage(), backgroundColor: #colorLiteral(red: 0.939599514, green: 0.9696645141, blue: 0.89979285, alpha: 1)),
@@ -48,6 +47,7 @@ extension ExpensesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as? CategoryCollectionViewCell ?? CategoryCollectionViewCell()
         cell.setupCell(categories[indexPath.item])
+        cell.delegate = self
         return cell
     }
 }
