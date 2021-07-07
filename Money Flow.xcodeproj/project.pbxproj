@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		440E20AE2695782E00F019A7 /* PopupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20AD2695782E00F019A7 /* PopupScreenViewController.swift */; };
 		440E20C326959CDC00F019A7 /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440E20C226959CDC00F019A7 /* EmojiCell.xib */; };
+		440E20DD2695ED6200F019A7 /* ProfileeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20DC2695ED6200F019A7 /* ProfileeTableViewCell.swift */; };
 		4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE062690A698009A4B6A /* AppDelegate.swift */; };
 		4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE082690A698009A4B6A /* SceneDelegate.swift */; };
 		4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE0A2690A698009A4B6A /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		440E20AD2695782E00F019A7 /* PopupScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreenViewController.swift; sourceTree = "<group>"; };
 		440E20C226959CDC00F019A7 /* EmojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
+		440E20DC2695ED6200F019A7 /* ProfileeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileeTableViewCell.swift; sourceTree = "<group>"; };
 		4428BE032690A698009A4B6A /* Money Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4428BE062690A698009A4B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4428BE082690A698009A4B6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,11 +212,12 @@
 		E222857D26938C810023F727 /* MaratTemplates */ = {
 			isa = PBXGroup;
 			children = (
+				440E20DC2695ED6200F019A7 /* ProfileeTableViewCell.swift */,
+				E2228571269389C60023F727 /* ProfileeViewController.swift */,
+				E222856F2693897B0023F727 /* ProfileScreenboard.storyboard */,
 				E222857726938A860023F727 /* CategoryTableViewCell.swift */,
 				E222857526938A320023F727 /* CategoryViewController.swift */,
-				E2228571269389C60023F727 /* ProfileeViewController.swift */,
 				E222857326938A030023F727 /* CategoryStoryboard.storyboard */,
-				E222856F2693897B0023F727 /* ProfileScreenboard.storyboard */,
 			);
 			path = MaratTemplates;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				44E0F7E526945A44003E538F /* PopupScreenTemplate.swift in Sources */,
 				E222857626938A320023F727 /* CategoryViewController.swift in Sources */,
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
+				440E20DD2695ED6200F019A7 /* ProfileeTableViewCell.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
