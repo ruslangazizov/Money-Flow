@@ -14,6 +14,8 @@
 		440E20D226959F1F00F019A7 /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440E20CB26959F1F00F019A7 /* EmojiCell.xib */; };
 		440E20D326959F1F00F019A7 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20CC26959F1F00F019A7 /* EmojiCell.swift */; };
 		440E20D426959F1F00F019A7 /* PopupScreenTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20CD26959F1F00F019A7 /* PopupScreenTemplate.swift */; };
+		440E20DA2695A68C00F019A7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20D72695A68C00F019A7 /* DetailTableViewCell.swift */; };
+		440E20DB2695A68C00F019A7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20D82695A68C00F019A7 /* DetailViewController.swift */; };
 		4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE062690A698009A4B6A /* AppDelegate.swift */; };
 		4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE082690A698009A4B6A /* SceneDelegate.swift */; };
 		4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE0A2690A698009A4B6A /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		440E20CB26959F1F00F019A7 /* EmojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
 		440E20CC26959F1F00F019A7 /* EmojiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 		440E20CD26959F1F00F019A7 /* PopupScreenTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupScreenTemplate.swift; sourceTree = "<group>"; };
+		440E20D72695A68C00F019A7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		440E20D82695A68C00F019A7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4428BE032690A698009A4B6A /* Money Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4428BE062690A698009A4B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4428BE082690A698009A4B6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,11 +86,11 @@
 		440E20C426959F1F00F019A7 /* ThirdScreen */ = {
 			isa = PBXGroup;
 			children = (
-				440E20C526959F1F00F019A7 /* PopupScreenViewController.swift */,
 				440E20C626959F1F00F019A7 /* Category */,
-				440E20C926959F1F00F019A7 /* AddScreenViewController.swift */,
 				440E20CA26959F1F00F019A7 /* Emoji */,
 				440E20CD26959F1F00F019A7 /* PopupScreenTemplate.swift */,
+				440E20C526959F1F00F019A7 /* PopupScreenViewController.swift */,
+				440E20C926959F1F00F019A7 /* AddScreenViewController.swift */,
 			);
 			path = ThirdScreen;
 			sourceTree = "<group>";
@@ -107,6 +111,15 @@
 				440E20CC26959F1F00F019A7 /* EmojiCell.swift */,
 			);
 			path = Emoji;
+			sourceTree = "<group>";
+		};
+		440E20D52695A68C00F019A7 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				440E20D72695A68C00F019A7 /* DetailTableViewCell.swift */,
+				440E20D82695A68C00F019A7 /* DetailViewController.swift */,
+			);
+			path = SecondScreen;
 			sourceTree = "<group>";
 		};
 		4428BDFA2690A698009A4B6A = {
@@ -166,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				440E20C426959F1F00F019A7 /* ThirdScreen */,
+				440E20D52695A68C00F019A7 /* SecondScreen */,
 				449BE686269352F400C0F2A1 /* Category Cell */,
 				449BE680269352DA00C0F2A1 /* Categories images.xcassets */,
 				449BE681269352DA00C0F2A1 /* Category.swift */,
@@ -283,11 +297,13 @@
 			files = (
 				440E20D426959F1F00F019A7 /* PopupScreenTemplate.swift in Sources */,
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
+				440E20DB2695A68C00F019A7 /* DetailViewController.swift in Sources */,
 				449BE685269352DA00C0F2A1 /* Category.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
 				440E20CE26959F1F00F019A7 /* PopupScreenViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
+				440E20DA2695A68C00F019A7 /* DetailTableViewCell.swift in Sources */,
 				449BE682269352DA00C0F2A1 /* CategoryCollectionViewCell.swift in Sources */,
 				44C40F6326921BD5007A1AB3 /* IncomesViewController.swift in Sources */,
 				440E20D326959F1F00F019A7 /* EmojiCell.swift in Sources */,

@@ -9,15 +9,27 @@ import UIKit
 
 class AddScreenViewController: UIViewController {
     
+    @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var panelView: UIView!
     @IBOutlet weak var screenNameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var dataTextField: UITextField!
     @IBOutlet weak var costTextField: UITextField!
     @IBOutlet weak var choiceTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
+    
+    var backgroundColor: UIColor!
+    var categoryName: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        screenNameLabel.text = categoryName
+        mainView.backgroundColor = backgroundColor
+        saveButton.backgroundColor = backgroundColor
+        saveButton.layer.cornerRadius = 15
+        panelView.layer.cornerRadius = 20
+        panelView.dropShadow()
     }
 
     @IBAction func dropdownButtonAction(_ sender: Any) {

@@ -27,8 +27,10 @@ class CategoryCollectionViewCell: UICollectionViewCell {
         layer.cornerRadius = 15
     }
 
-    @IBAction func categoryButtonAction(_ sender: Any) {
-//        guard let addScreenViewController = delegate?.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
-//        delegate?.navigationController?.pushViewController(addScreenViewController, animated: true)
+    @IBAction func categoryButtonAction(_ sender: UIButton) {
+        guard let detailViewController = delegate?.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else { return }
+        detailViewController.backgroundColor = backgroundColor
+        detailViewController.categoryName = categoryNameLabel.text
+        delegate?.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
