@@ -13,7 +13,7 @@
         <!--Add Screen View Controller-->
         <scene sceneID="FRw-1I-d18">
             <objects>
-                <viewController id="zch-KN-uC2" customClass="AddScreenViewController" customModule="Money_Flow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddScreenViewController" id="zch-KN-uC2" customClass="AddScreenViewController" customModule="Money_Flow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-4p-HfV">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view opaque="NO" clipsSubviews="YES" alpha="0.80000001192092896" tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRP-ZT-q8M">
-                                        <rect key="frame" x="30" y="119" width="330" height="128"/>
+                                        <rect key="frame" x="30" y="131" width="330" height="128"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Название" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-ws-R9q" userLabel="Screen Name Label">
@@ -33,7 +33,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.79992563949999995" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.44455629460000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -92,7 +92,10 @@
                         <outlet property="choiceTextField" destination="Tr1-cx-BEZ" id="E0i-6I-Js3"/>
                         <outlet property="costTextField" destination="J2M-45-dVg" id="JOO-8L-JAT"/>
                         <outlet property="dataTextField" destination="uO0-gY-hje" id="nPw-tS-nIf"/>
+                        <outlet property="mainView" destination="Jv6-47-z4h" id="fAh-qE-Hf2"/>
                         <outlet property="nameTextField" destination="iCq-xp-C0n" id="MG3-Jo-0EG"/>
+                        <outlet property="panelView" destination="cRP-ZT-q8M" id="Vko-hA-gTZ"/>
+                        <outlet property="saveButton" destination="bL6-8L-J7f" id="rve-lZ-97x"/>
                         <outlet property="screenNameLabel" destination="1YU-ws-R9q" id="fdl-u6-dRP"/>
                     </connections>
                 </viewController>

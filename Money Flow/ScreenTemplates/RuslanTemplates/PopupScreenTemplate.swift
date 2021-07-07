@@ -21,7 +21,7 @@ struct PopupScreenTemplate {
     
     static func getEmojiInformation() -> ([String], String, CGFloat, CGFloat) {
         let emojiCellID = "EmojiCell"
-        return (emojis(), emojiCellID, 10, 10)
+        return (emojis(), emojiCellID, 10, 3)
     }
     
     static func getCategoriesInformation() -> ([Category], String, CGFloat, CGFloat) {
