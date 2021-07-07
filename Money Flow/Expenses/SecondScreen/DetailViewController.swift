@@ -20,9 +20,9 @@ class DetailViewController: UIViewController {
     var categoryName: String!
     
     private let tempData: [ExpenseInfo] = [
-        ExpenseInfo(name: "Новые шины", date: "21.05.2020", icon: "⚙️", cost: 1200),
-        ExpenseInfo(name: "Автомойка", date: "21.05.2020", icon: "🚿", cost: 15),
-        ExpenseInfo(name: "Автосервис", date: "21.05.2020", icon: "🛠", cost: 900)
+        ExpenseInfo(categoryName: "Транспорт", name: "Новые шины", date: "21.05.2020", icon: "⚙️", cost: 1200),
+        ExpenseInfo(categoryName: "Транспорт", name: "Автомойка", date: "21.05.2020", icon: "🚿", cost: 15),
+        ExpenseInfo(categoryName: "Транспорт", name: "Автосервис", date: "21.05.2020", icon: "🛠", cost: 900)
     ]
     
     override func viewDidLoad() {
@@ -66,28 +66,6 @@ extension DetailViewController: UITableViewDataSource {
 
 extension DetailViewController: UITableViewDelegate {
     
-}
-
-struct ExpenseInfo {
-    let name: String
-    let date: String //#warning: как хранить дату?
-    let icon: String
-    let cost: CGFloat
-    
-    func getPrettyStringForCost() -> String {
-        let costArray = Array(String(Int(cost)))
-        var prettyString = ""
-        for (i, digit) in costArray.reversed().enumerated() {
-            prettyString = String(digit) + prettyString
-            if i % 3 == 2 {
-                prettyString = "," + prettyString
-            }
-        }
-        if prettyString.starts(with: ",") {
-            prettyString.removeFirst()
-        }
-        return "$" + prettyString
-    }
 }
 
 extension UIView {
