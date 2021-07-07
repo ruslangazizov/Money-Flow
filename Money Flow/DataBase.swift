@@ -12,25 +12,39 @@ class DataBase {
     
     private static let userDefaults = UserDefaults.standard
     
-    static var totalIncome: CGFloat = 0
-    static var totalExpenses: CGFloat = 0
-    static var incomeTransactions: [IncomeInfo] = []
-    static var expensesTransactions: [ExpenseInfo] = []
+    private static var totalIncome: CGFloat = 0
+    private static var totalExpenses: CGFloat = 0
+    private static var incomeTransactions: [IncomeInfo] = []
+    private static var expensesTransactions: [ExpenseInfo] = []
     
     static func save() {
         if let encoded = try? JSONEncoder().encode(DataBase.incomeTransactions) {
-            userDefaults.set(encoded, forKey: "transactions")
+            userDefaults.set(encoded, forKey: "incomeTransactions")
         }
         if let encoded = try? JSONEncoder().encode(DataBase.expensesTransactions) {
-            userDefaults.set(encoded, forKey: "transactions")
+            userDefaults.set(encoded, forKey: "expensesTransactions")
         }
+        userDefaults.set(totalIncome, forKey: "totalIncome")
+        userDefaults.set(totalExpenses, forKey: "totalExpenses")
     }
     
     static func check() {
-        if userDefaults.float(forKey: "totalIncome") == 0 {
+        if userDefaults.float(forKey: "totalIncome") == 0.0 && userDefaults.float(forKey: "totalExpenses") == 0.0 {
             userDefaults.set(0, forKey: "totalIncome")
             userDefaults.set(0, forKey: "totalExpenses")
-            save()
+        } else {
+            totalIncome = CGFloat(userDefaults.float(forKey: "totalIncome"))
+            totalExpenses = CGFloat(userDefaults.float(forKey: "totalExpenses"))
+            if let data = userDefaults.data(forKey: "incomeTransactions") {
+                if let decoded = try? JSONDecoder().decode([IncomeInfo].self, from: data) {
+                    incomeTransactions = decoded
+                }
+            }
+            if let data = userDefaults.data(forKey: "expensesTransactions") {
+                if let decoded = try? JSONDecoder().decode([ExpenseInfo].self, from: data) {
+                    expensesTransactions = decoded
+                }
+            }
         }
     }
     
@@ -124,7 +138,7 @@ struct IncomeInfo: Decodable, Encodable {
     let icon: String
     let worth: CGFloat
     
-    func getPrettyStringForCost() -> String {
+    func getPrettyStringForWorth() -> String {
         let costArray = Array(String(Int(worth)))
         var prettyString = ""
         for (i, digit) in costArray.reversed().enumerated() {
