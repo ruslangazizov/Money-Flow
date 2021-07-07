@@ -21,7 +21,7 @@ class AddScreenViewController: UIViewController {
     }
 
     @IBAction func dropdownButtonAction(_ sender: Any) {
-        guard let popupScreenViewController = storyboard?.instantiateViewController(withIdentifier: "PopupCollectionViewController") as? PopupCollectionViewController else { return }
+        guard let popupScreenViewController = storyboard?.instantiateViewController(withIdentifier: "PopupScreenViewController") as? PopupScreenViewController else { return }
         
         popupScreenViewController.delegate = self
 //        popupScreenViewController.dataSource = self

@@ -13,7 +13,7 @@ class CategoryCell: UICollectionViewCell {
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var categoryNameLabel: UILabel!
     
-    weak var delegate: PopupCollectionViewController?
+    weak var delegate: PopupScreenViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()

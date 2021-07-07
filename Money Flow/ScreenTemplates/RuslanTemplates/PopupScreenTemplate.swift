@@ -26,19 +26,21 @@ struct PopupScreenTemplate {
     
     static func getCategoriesInformation() -> ([Category], String, CGFloat, CGFloat) {
         let categoryCellID = "CategoryCell"
-        let categories: [Category] = [Category(image: UIImage(named: "Car")!, name: "Транспорт", backgroundColor: #colorLiteral(red: 0.9731522202, green: 0.9238572717, blue: 0.9159588218, alpha: 1)),
-                                             Category(image: UIImage(named: "Bags")!, name: "Шоппинг", backgroundColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)),
-                                             Category(image: UIImage(named: "Banana")!, name: "Продукты", backgroundColor: #colorLiteral(red: 0.8349118829, green: 0.9203750491, blue: 0.9531015754, alpha: 1)),
-                                             Category(image: UIImage(named: "Pill")!, name: "Здоровье", backgroundColor: #colorLiteral(red: 0.939599514, green: 0.9696645141, blue: 0.89979285, alpha: 1)),
-                                             Category(image: UIImage(named: "Cutlery")!, name: "Кафе", backgroundColor: #colorLiteral(red: 0.9153895974, green: 0.9056152701, blue: 0.9657009244, alpha: 1)),
-                                             Category(image: UIImage(named: "House")!, name: "Дом", backgroundColor: #colorLiteral(red: 0.9192375541, green: 0.9743735194, blue: 0.9603385329, alpha: 1))]
+        let categories: [Category] = [
+            Category(name: "Транспорт", image: UIImage(named: "Car")!, backgroundColor: #colorLiteral(red: 0.9731522202, green: 0.9238572717, blue: 0.9159588218, alpha: 1)),
+            Category(name: "Шоппинг", image: UIImage(named: "Bags")!, backgroundColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)),
+            Category(name: "Продукты", image: UIImage(named: "Banana")!, backgroundColor: #colorLiteral(red: 0.8349118829, green: 0.9203750491, blue: 0.9531015754, alpha: 1)),
+            Category(name: "Здоровье", image: UIImage(named: "Pill")!, backgroundColor: #colorLiteral(red: 0.939599514, green: 0.9696645141, blue: 0.89979285, alpha: 1)),
+            Category(name: "Кафе", image: UIImage(named: "Cutlery")!, backgroundColor: #colorLiteral(red: 0.9153895974, green: 0.9056152701, blue: 0.9657009244, alpha: 1)),
+            Category(name: "Дом", image: UIImage(named: "House")!, backgroundColor: #colorLiteral(red: 0.9192375541, green: 0.9743735194, blue: 0.9603385329, alpha: 1))
+        ]
         return (categories, categoryCellID, 2, 25)
     }
     
 }
 
 struct Category {
-    let image: UIImage
     let name: String
+    let image: UIImage
     let backgroundColor: UIColor
 }

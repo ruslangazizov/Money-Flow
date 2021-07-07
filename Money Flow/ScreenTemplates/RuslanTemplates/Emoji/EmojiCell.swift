@@ -11,7 +11,7 @@ class EmojiCell: UICollectionViewCell {
 
     @IBOutlet weak var emojiLabel: UILabel!
     
-    weak var delegate: PopupCollectionViewController?
+    weak var delegate: PopupScreenViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()

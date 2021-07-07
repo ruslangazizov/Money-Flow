@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440E20AE2695782E00F019A7 /* PopupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20AD2695782E00F019A7 /* PopupScreenViewController.swift */; };
 		4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE062690A698009A4B6A /* AppDelegate.swift */; };
 		4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE082690A698009A4B6A /* SceneDelegate.swift */; };
 		4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE0A2690A698009A4B6A /* ViewController.swift */; };
@@ -25,7 +26,6 @@
 		44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F6626921C0F007A1AB3 /* GoalsViewController.swift */; };
 		44C40F6926921C5D007A1AB3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C40F6826921C5D007A1AB3 /* Settings.storyboard */; };
 		44C40F6B26921C78007A1AB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */; };
-		44E0F7DE26945942003E538F /* PopupCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7DD26945942003E538F /* PopupCollectionViewController.swift */; };
 		44E0F7E226945A02003E538F /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7E026945A02003E538F /* EmojiCell.swift */; };
 		44E0F7E326945A02003E538F /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E0F7E126945A02003E538F /* EmojiCell.xib */; };
 		44E0F7E526945A44003E538F /* PopupScreenTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7E426945A44003E538F /* PopupScreenTemplate.swift */; };
@@ -40,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440E20AD2695782E00F019A7 /* PopupScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreenViewController.swift; sourceTree = "<group>"; };
 		4428BE032690A698009A4B6A /* Money Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4428BE062690A698009A4B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4428BE082690A698009A4B6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		44C40F6626921C0F007A1AB3 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		44C40F6826921C5D007A1AB3 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		44E0F7DD26945942003E538F /* PopupCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupCollectionViewController.swift; sourceTree = "<group>"; };
 		44E0F7E026945A02003E538F /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 		44E0F7E126945A02003E538F /* EmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
 		44E0F7E426945A44003E538F /* PopupScreenTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreenTemplate.swift; sourceTree = "<group>"; };
@@ -135,8 +135,8 @@
 			children = (
 				44E0F7E8269467E7003E538F /* Category */,
 				44E0F7DF269459DA003E538F /* Emoji */,
-				44E0F7DD26945942003E538F /* PopupCollectionViewController.swift */,
 				44E0F7E426945A44003E538F /* PopupScreenTemplate.swift */,
+				440E20AD2695782E00F019A7 /* PopupScreenViewController.swift */,
 				449BE69926939A0A00C0F2A1 /* AddScreenViewController.swift */,
 				449BE69826939A0A00C0F2A1 /* AddScreen.storyboard */,
 			);
@@ -305,7 +305,6 @@
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
-				44E0F7DE26945942003E538F /* PopupCollectionViewController.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
 				44C40F6326921BD5007A1AB3 /* IncomesViewController.swift in Sources */,
 				E222857826938A860023F727 /* CategoryTableViewCell.swift in Sources */,
@@ -314,6 +313,7 @@
 				44E0F7EB2694681B003E538F /* CategoryCell.swift in Sources */,
 				449BE69A26939A0A00C0F2A1 /* AddScreenViewController.swift in Sources */,
 				E2228572269389C60023F727 /* ProfileeViewController.swift in Sources */,
+				440E20AE2695782E00F019A7 /* PopupScreenViewController.swift in Sources */,
 				4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */,
 				44C40F6B26921C78007A1AB3 /* SettingsViewController.swift in Sources */,
 			);
