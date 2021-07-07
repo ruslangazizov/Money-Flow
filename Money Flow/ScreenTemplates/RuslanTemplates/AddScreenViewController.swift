@@ -29,6 +29,7 @@ class AddScreenViewController: UIViewController {
     }
     
     @IBAction func saveButtonAction(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
     func updateChoiceWith(_ choice: String) {

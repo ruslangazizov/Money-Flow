@@ -64,16 +64,17 @@ extension PopupScreenViewController: UICollectionViewDelegate {
 
 extension PopupScreenViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let margin: CGFloat = 25
-        let paddingWidth = margin * itemsPerRowCount + widthBetweenItemsInLine * (itemsPerRowCount - 1)
+        let margin: CGFloat = cellID == "EmojiCell" ? 15 : 25
+        let paddingWidth = margin * 2 + widthBetweenItemsInLine * (itemsPerRowCount - 1)
         let totalAvailableWidth = collectionView.frame.width - paddingWidth
         let widthForCell = totalAvailableWidth / itemsPerRowCount
         return CGSize(width: widthForCell, height: widthForCell)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        let margin: CGFloat = 25
-        return UIEdgeInsets(top: 15, left: margin, bottom: margin, right: margin)
+        let margin: CGFloat = cellID == "EmojiCell" ? 15 : 25
+        let topMargin: CGFloat = cellID == "EmojiCell" ? 0 : 15
+        return UIEdgeInsets(top: topMargin, left: margin, bottom: margin, right: margin)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -81,7 +82,7 @@ extension PopupScreenViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        cellID == "EmojiCell" ? 10 : 20
+        cellID == "EmojiCell" ? 5 : 20
     }
     
 }

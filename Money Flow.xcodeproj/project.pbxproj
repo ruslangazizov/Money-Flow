@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		440E20AE2695782E00F019A7 /* PopupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20AD2695782E00F019A7 /* PopupScreenViewController.swift */; };
+		440E20C326959CDC00F019A7 /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440E20C226959CDC00F019A7 /* EmojiCell.xib */; };
 		4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE062690A698009A4B6A /* AppDelegate.swift */; };
 		4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE082690A698009A4B6A /* SceneDelegate.swift */; };
 		4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE0A2690A698009A4B6A /* ViewController.swift */; };
@@ -27,7 +28,6 @@
 		44C40F6926921C5D007A1AB3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C40F6826921C5D007A1AB3 /* Settings.storyboard */; };
 		44C40F6B26921C78007A1AB3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */; };
 		44E0F7E226945A02003E538F /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7E026945A02003E538F /* EmojiCell.swift */; };
-		44E0F7E326945A02003E538F /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44E0F7E126945A02003E538F /* EmojiCell.xib */; };
 		44E0F7E526945A44003E538F /* PopupScreenTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7E426945A44003E538F /* PopupScreenTemplate.swift */; };
 		44E0F7E72694653F003E538F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E0F7E62694653F003E538F /* Media.xcassets */; };
 		44E0F7EB2694681B003E538F /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E0F7E92694681B003E538F /* CategoryCell.swift */; };
@@ -41,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		440E20AD2695782E00F019A7 /* PopupScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreenViewController.swift; sourceTree = "<group>"; };
+		440E20C226959CDC00F019A7 /* EmojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
 		4428BE032690A698009A4B6A /* Money Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4428BE062690A698009A4B6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4428BE082690A698009A4B6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +63,6 @@
 		44C40F6826921C5D007A1AB3 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		44E0F7E026945A02003E538F /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
-		44E0F7E126945A02003E538F /* EmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
 		44E0F7E426945A44003E538F /* PopupScreenTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreenTemplate.swift; sourceTree = "<group>"; };
 		44E0F7E62694653F003E538F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		44E0F7E92694681B003E538F /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -182,8 +182,8 @@
 		44E0F7DF269459DA003E538F /* Emoji */ = {
 			isa = PBXGroup;
 			children = (
+				440E20C226959CDC00F019A7 /* EmojiCell.xib */,
 				44E0F7E026945A02003E538F /* EmojiCell.swift */,
-				44E0F7E126945A02003E538F /* EmojiCell.xib */,
 			);
 			path = Emoji;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 				44E0F7EC2694681B003E538F /* CategoryCell.xib in Resources */,
 				449BE69C26939A0A00C0F2A1 /* AddScreen.storyboard in Resources */,
 				44E0F7E72694653F003E538F /* Media.xcassets in Resources */,
-				44E0F7E326945A02003E538F /* EmojiCell.xib in Resources */,
+				440E20C326959CDC00F019A7 /* EmojiCell.xib in Resources */,
 				E222857426938A030023F727 /* CategoryStoryboard.storyboard in Resources */,
 				E22285702693897B0023F727 /* ProfileScreenboard.storyboard in Resources */,
 				44C40F5D26921A88007A1AB3 /* Expenses.storyboard in Resources */,
