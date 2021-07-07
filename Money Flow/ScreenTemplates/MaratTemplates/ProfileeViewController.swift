@@ -38,3 +38,25 @@ class ProfileeViewController: UIViewController {
     }
 
 }
+
+extension ProfileeViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tempData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: profileeTableViewCellID) as? ProfileeTableViewCell ?? ProfileeTableViewCell()
+        cell.setData(tempData[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        70
+    }
+    
+}
+
+extension ProfileeViewController: UITableViewDelegate {
+    
+}

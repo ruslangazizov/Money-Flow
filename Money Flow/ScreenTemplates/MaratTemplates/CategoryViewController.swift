@@ -35,6 +35,28 @@ class CategoryViewController: UIViewController {
     
 }
 
+extension CategoryViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        tempData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: categoryTableViewCellID) as? CategoryTableViewCell ?? CategoryTableViewCell()
+        cell.setData(tempData[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        70
+    }
+    
+}
+
+extension CategoryViewController: UITableViewDelegate {
+    
+}
+
 struct ExpenseInfo {
     let name: String
     let date: String //#warning: как хранить дату?
