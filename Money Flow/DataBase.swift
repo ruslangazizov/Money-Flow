@@ -12,8 +12,8 @@ class DataBase {
     
     private static let userDefaults = UserDefaults.standard
     
-    private static var totalIncome: CGFloat = 0
-    private static var totalExpenses: CGFloat = 0
+    private static var totalIncome: CGFloat = 0.0
+    private static var totalExpenses: CGFloat = 0.0
     private static var incomeTransactions: [IncomeInfo] = []
     private static var expensesTransactions: [ExpenseInfo] = []
     
@@ -30,8 +30,8 @@ class DataBase {
     
     static func check() {
         if userDefaults.float(forKey: "totalIncome") == 0.0 && userDefaults.float(forKey: "totalExpenses") == 0.0 {
-            userDefaults.set(0, forKey: "totalIncome")
-            userDefaults.set(0, forKey: "totalExpenses")
+            userDefaults.set(0.0, forKey: "totalIncome")
+            userDefaults.set(0.0, forKey: "totalExpenses")
         } else {
             totalIncome = CGFloat(userDefaults.float(forKey: "totalIncome"))
             totalExpenses = CGFloat(userDefaults.float(forKey: "totalExpenses"))
@@ -81,6 +81,37 @@ class DataBase {
             }
         }
         return totalExpenseInCategory
+    }
+    
+    static func getExpensesArrayIn(category: String) -> [ExpenseInfo] {
+        check()
+        var expensesArrayInCategory: [ExpenseInfo] = []
+        for transaction in expensesTransactions {
+            if transaction.categoryName == category {
+                expensesArrayInCategory.append(transaction)
+            }
+        }
+        return expensesArrayInCategory
+    }
+    
+    static func getIncomeArrayFrom(source: String) -> [IncomeInfo] {
+        check()
+        var incomeArrayInCategory: [IncomeInfo] = []
+        for transaction in incomeTransactions {
+            if transaction.source == source {
+                incomeArrayInCategory.append(transaction)
+            }
+        }
+        return incomeArrayInCategory
+    }
+    
+    static func deleteAllData() {
+        check()
+        totalIncome = 0.0
+        totalExpenses = 0.0
+        incomeTransactions.removeAll()
+        expensesTransactions.removeAll()
+        save()
     }
     
     static func getMonthExpensesIn(month: String) -> CGFloat {
