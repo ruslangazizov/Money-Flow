@@ -94,15 +94,9 @@ class DataBase {
         return expensesArrayInCategory
     }
     
-    static func getIncomeArrayFrom(source: String) -> [IncomeInfo] {
+    static func getIncomeArray() -> [IncomeInfo] {
         check()
-        var incomeArrayInCategory: [IncomeInfo] = []
-        for transaction in incomeTransactions {
-            if transaction.source == source {
-                incomeArrayInCategory.append(transaction)
-            }
-        }
-        return incomeArrayInCategory
+        return incomeTransactions
     }
     
     static func deleteAllData() {
