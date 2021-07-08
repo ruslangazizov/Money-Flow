@@ -240,6 +240,13 @@
                                     <action selector="saveButtonAction:" destination="oML-ll-UaG" eventType="touchUpInside" id="DZX-xZ-CNV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Проверьте корректность введенных данных" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vT-fG-nao">
+                                <rect key="frame" x="30" y="597" width="330" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QLi-Mu-Q0m"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -254,6 +261,7 @@
                         <outlet property="nameTextField" destination="uFO-zq-M0e" id="f7Y-8O-lia"/>
                         <outlet property="panelView" destination="Zdd-CP-SBb" id="kd7-5b-Cyq"/>
                         <outlet property="saveButton" destination="8QY-cd-KLg" id="2in-3J-1ut"/>
+                        <outlet property="warningLabel" destination="7vT-fG-nao" id="fyY-tF-8as"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqq-fe-kWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -317,6 +325,9 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
