@@ -49,7 +49,7 @@ class AddScreenViewController: UIViewController {
         warningLabel.isHidden = true
         let income = IncomeInfo(source: source, date: date, icon: icon, worth: CGFloat(Float(worth)!))
         DataBase.addIncome(income)
-        delegate?.reloadData()
+//        delegate?.reloadData()
         navigationController?.popViewController(animated: true)
     }
     

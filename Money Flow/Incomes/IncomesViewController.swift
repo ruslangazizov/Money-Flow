@@ -14,6 +14,7 @@ class IncomesViewController: UIViewController {
         @IBOutlet weak var tableView: UITableView!
         @IBOutlet weak var panelView: UIView!
         @IBOutlet weak var mainView: UIView!
+        @IBOutlet weak var addButton: UIButton!
     
         
     private let incomesTableViewCellID = "IncomesTableViewCell"
@@ -40,10 +41,10 @@ class IncomesViewController: UIViewController {
         }
     
     //непанимаю как сделать((((
-    func reloadData() {
-        data = DataBase.getIncomeArrayFrom(source:  )
-            tableView.reloadData()
-        }
+//    func reloadData() {
+//        data = DataBase.getIncomeArrayFrom(source:  )
+//            tableView.reloadData()
+//        }
         
     }
 

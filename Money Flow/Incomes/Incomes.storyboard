@@ -157,8 +157,7 @@
                     <navigationItem key="navigationItem" id="fKk-q8-cNm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="addButton" destination="NOE-1Y-5Ms" id="orZ-4n-ZLb"/>
-                        <outlet property="categoryLabel" destination="6wc-0z-VSy" id="21t-6x-XD6"/>
+                        <outlet property="addButton" destination="NOE-1Y-5Ms" id="6Pn-uu-Rbg"/>
                         <outlet property="mainView" destination="hDB-wE-poS" id="Rqv-mf-ENu"/>
                         <outlet property="panelView" destination="Xdl-qj-ZTf" id="Mee-uQ-iwZ"/>
                         <outlet property="tableView" destination="Fsn-yC-OPy" id="mJw-Qz-Ql3"/>
