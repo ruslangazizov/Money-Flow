@@ -15,7 +15,7 @@ class AddScreenViewController: UIViewController {
     @IBOutlet weak var dataTextField: UITextField!
     @IBOutlet weak var costTextField: UITextField!
     @IBOutlet weak var choiceTextField: UITextField!
-    @IBOutlet weak var warningLabel: UILabel!
+//    @IBOutlet weak var warningLabel: UILabel!
     @IBOutlet weak var saveButton: UIButton!
     
     weak var delegate: IncomesViewController?
@@ -26,7 +26,7 @@ class AddScreenViewController: UIViewController {
         saveButton.layer.cornerRadius = 15
         panelView.layer.cornerRadius = 20
         panelView.dropShadow()
-        warningLabel.isHidden = true
+//        warningLabel.isHidden = true
     }
 
     @IBAction func dropdownButtonAction(_ sender: Any) {
@@ -39,17 +39,17 @@ class AddScreenViewController: UIViewController {
     
     @IBAction func saveButtonAction(_ sender: Any) {
         guard let source = nameTextField.text, let date = dataTextField.text,let icon = choiceTextField.text, let worth = costTextField.text else{
-            warningLabel.isHidden = false
+//            warningLabel.isHidden = false
             return
         }
         if !checkData(date: date, worth: worth, icon: icon){
-            warningLabel.isHidden = false
+//            warningLabel.isHidden = false
             return
         }
-        warningLabel.isHidden = true
+//        warningLabel.isHidden = true
         let income = IncomeInfo(source: source, date: date, icon: icon, worth: CGFloat(Float(worth)!))
         DataBase.addIncome(income)
-//        delegate?.reloadData()
+        delegate?.reloadData()
         navigationController?.popViewController(animated: true)
     }
     

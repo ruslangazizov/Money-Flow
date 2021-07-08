@@ -153,7 +153,7 @@
                         <viewLayoutGuide key="safeArea" id="V6W-b3-zNV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="Profile" id="YTm-M3-Xrn"/>
+                    <tabBarItem key="tabBarItem" title="" image="Incomes" id="YTm-M3-Xrn"/>
                     <navigationItem key="navigationItem" id="fKk-q8-cNm"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -254,7 +254,6 @@
                         <outlet property="nameTextField" destination="uFO-zq-M0e" id="f7Y-8O-lia"/>
                         <outlet property="panelView" destination="Zdd-CP-SBb" id="kd7-5b-Cyq"/>
                         <outlet property="saveButton" destination="8QY-cd-KLg" id="2in-3J-1ut"/>
-                        <outlet property="screenNameLabel" destination="Qav-ci-gK2" id="QIL-xt-w0W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqq-fe-kWp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -304,6 +303,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Incomes" width="24" height="14"/>
         <image name="Profile" width="24" height="26"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">

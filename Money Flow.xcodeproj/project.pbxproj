@@ -161,7 +161,6 @@
 		D63475B526972C8C004390EF /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				D63475B926972C8C004390EF /* Emoji */,
 				D63475B626972C8C004390EF /* CategoryCell.swift */,
 				D63475B726972C8C004390EF /* CategoryCell.xib */,
 			);
@@ -183,6 +182,7 @@
 				D63475B426972C8C004390EF /* PopupScreenViewController.swift */,
 				D63475BC26972C8C004390EF /* PopupScreenTemplate.swift */,
 				D63475B826972C8C004390EF /* AddScreenViewController.swift */,
+				D63475B926972C8C004390EF /* Emoji */,
 				D63475B526972C8C004390EF /* Category */,
 			);
 			path = SecondScreen;
