@@ -17,13 +17,13 @@ class DetailViewController: UIViewController {
     
     private let detailTableViewCellID = "DetailTableViewCell"
     var backgroundColor: UIColor!
-    var categoryName: String!
+    var categoryName: String! {
+        didSet {
+            data = DataBase.getExpensesArrayIn(category: categoryName)
+        }
+    }
     
-    private let tempData: [ExpenseInfo] = [
-        ExpenseInfo(categoryName: "Транспорт", name: "Новые шины", date: "21.05.2020", icon: "⚙️", cost: 1200),
-        ExpenseInfo(categoryName: "Транспорт", name: "Автомойка", date: "21.05.2020", icon: "🚿", cost: 15),
-        ExpenseInfo(categoryName: "Транспорт", name: "Автосервис", date: "21.05.2020", icon: "🛠", cost: 900)
-    ]
+    private var data: [ExpenseInfo]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,13 +35,24 @@ class DetailViewController: UIViewController {
         mainView.backgroundColor = backgroundColor
         panelView.layer.cornerRadius = 20
         panelView.dropShadow()
+        valueLabel.text = String(Float(DataBase.getTotalExpensesIn(category: categoryName)))
+        
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: categoryName, style: .plain, target: nil, action: nil)
     }
     
     @IBAction func addButtonAction(_ sender: Any) {
         let addScreenViewController = storyboard?.instantiateViewController(identifier: "AddScreenViewController") as? AddScreenViewController ?? AddScreenViewController()
         addScreenViewController.backgroundColor = backgroundColor
         addScreenViewController.categoryName = categoryLabel.text
+        addScreenViewController.delegate = self
         navigationController?.pushViewController(addScreenViewController, animated: true)
+    }
+    
+    func reloadData() {
+        valueLabel.text = String(Float(DataBase.getTotalExpensesIn(category: categoryName)))
+        data = DataBase.getExpensesArrayIn(category: categoryName)
+        tableView.reloadData()
     }
     
 }
@@ -49,12 +60,12 @@ class DetailViewController: UIViewController {
 extension DetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        tempData.count
+        data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: detailTableViewCellID) as? DetailTableViewCell ?? DetailTableViewCell()
-        cell.setData(tempData[indexPath.row])
+        cell.setData(data[indexPath.row])
         return cell
     }
     
