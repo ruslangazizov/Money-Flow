@@ -23,6 +23,7 @@ class IncomesViewController: UIViewController {
         super.viewDidLoad()
         
         panelView.layer.cornerRadius = 20
+        panelView.alpha = 0.95
         panelView.dropShadow()
         
         tableView.dataSource = self
@@ -40,7 +41,6 @@ class IncomesViewController: UIViewController {
         navigationController?.pushViewController(addScreenViewController, animated: true)
     }
     
-    //непанимаю как сделать(((( - это мой косяк((((
     func reloadData() {
         valueLabel.text = String(Float(DataBase.getTotalIncome()))
         data = DataBase.getIncomeArray()
@@ -75,7 +75,7 @@ extension UIView {
     func dropShadow() {
         layer.masksToBounds = false
         layer.shadowColor = UIColor.lightGray.cgColor
-        layer.shadowOpacity = 0.2
+        layer.shadowOpacity = 0.4
         layer.shadowOffset = CGSize(width: 0, height: 0)
         layer.shadowRadius = 10
         layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
