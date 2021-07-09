@@ -43,6 +43,7 @@
                                         <rect key="frame" x="30" y="162" width="329" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view opaque="NO" clipsSubviews="YES" alpha="0.80000001192092896" tag="4" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdl-qj-ZTf">
@@ -87,7 +88,7 @@
                                         <color key="backgroundColor" red="0.97441155020000003" green="0.97441155020000003" blue="0.97441155020000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.27521307810000001" green="0.27521307810000001" blue="0.27521307810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fsn-yC-OPy">
                                 <rect key="frame" x="16" y="388" width="358" height="342"/>
@@ -108,7 +109,7 @@
                                                     <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сумма" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOf-w9-Fny">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сумма" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOf-w9-Fny">
                                                     <rect key="frame" x="250" y="-11" width="100" height="89"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
@@ -194,7 +195,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.27521307811592566" green="0.27521307811592566" blue="0.27521307811592566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Источник" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFO-zq-M0e">
                                 <rect key="frame" x="30" y="337" width="330" height="34"/>
@@ -231,10 +232,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QY-cd-KLg">
                                 <rect key="frame" x="30" y="646" width="330" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.27521307810000001" green="0.27521307810000001" blue="0.27521307810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Сохранить">
-                                    <color key="titleColor" systemColor="labelColor"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="saveButtonAction:" destination="oML-ll-UaG" eventType="touchUpInside" id="DZX-xZ-CNV"/>
@@ -314,9 +315,6 @@
         <image name="Incomes" width="24" height="14"/>
         <image name="Profile" width="24" height="26"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
