@@ -35,7 +35,23 @@ class AddScreenViewController: UIViewController, UITextFieldDelegate {
         panelView.dropShadow()
         warningLabel.isHidden = true
     }
-
+    
+    @IBAction func nameDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    @IBAction func dateDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    @IBAction func costDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    @IBAction func iconDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
     @IBAction func dropdownButtonAction(_ sender: Any) {
         guard let popupScreenViewController = storyboard?.instantiateViewController(withIdentifier: "PopupScreenViewController") as? PopupScreenViewController else { return }
         
