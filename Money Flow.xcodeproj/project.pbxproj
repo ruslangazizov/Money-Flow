@@ -14,6 +14,7 @@
 		4428BE102690A699009A4B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4428BE0F2690A699009A4B6A /* Assets.xcassets */; };
 		4428BE132690A699009A4B6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4428BE112690A699009A4B6A /* LaunchScreen.storyboard */; };
 		44683105269627620053320F /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44683104269627620053320F /* DataBase.swift */; };
+		449E11BD2699EC8400769D9F /* LimitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E11BC2699EC8400769D9F /* LimitsViewController.swift */; };
 		44C40F592692192F007A1AB3 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C40F582692192F007A1AB3 /* Profile.storyboard */; };
 		44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C40F5A26921953007A1AB3 /* ProfileViewController.swift */; };
 		44C40F5D26921A88007A1AB3 /* Expenses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C40F5C26921A88007A1AB3 /* Expenses.storyboard */; };
@@ -36,6 +37,7 @@
 		4428BE122690A699009A4B6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4428BE142690A699009A4B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44683104269627620053320F /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		449E11BC2699EC8400769D9F /* LimitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitsViewController.swift; sourceTree = "<group>"; };
 		44C40F582692192F007A1AB3 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		44C40F5A26921953007A1AB3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		44C40F5C26921A88007A1AB3 /* Expenses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Expenses.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				44C40F6826921C5D007A1AB3 /* Settings.storyboard */,
 				44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */,
+				449E11BC2699EC8400769D9F /* LimitsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
+				449E11BD2699EC8400769D9F /* LimitsViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
 				44683105269627620053320F /* DataBase.swift in Sources */,
