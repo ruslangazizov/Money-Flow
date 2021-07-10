@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+private let userDefaults = UserDefaults.standard
 class ViewController: UIViewController {
 
     override func viewDidLoad() {

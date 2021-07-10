@@ -7,10 +7,201 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController{
+    @IBOutlet weak var mainTextLabel: UILabel!
+    @IBOutlet weak var statisticsButton: UIButton!
+    @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var panelView: UIView!
+    @IBOutlet weak var mainView: UIView!
+    
+    @IBOutlet weak var historyButton: UIButton!
+    @IBOutlet weak var subView: UIView!
+    @IBOutlet weak var blurView: UIVisualEffectView!
+    
+//    let s = myCategory(name: "", image: UIImage(named: "Car") ?? UIImage(), value: 0, date: gettDate(ProfileViewController())() , id: 0)
 
+//    date: gettDate(ProfileViewController())()
+   
+    var isChecked = true
+    
+    var incomeOperations: [IncomeInfo] = DataBase.getIncomeArray()
+     var expenseOperations: [ExpenseInfo] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+        blurView.layer.cornerRadius = 13
+        let blurEffect = UIBlurEffect(style: .light)
+        blurView.effect = blurEffect
+        expenseOperations = getFullExpenseArray()
+        
+        historyButton.setTitle("История расходов 📉", for: .normal)
+        historyButton.setTitleColor(.red, for: .normal)
+        tableView.delegate = self
+        tableView.dataSource = self
+        panelView.layer.cornerRadius = 13
+        valueLabel.text = getPrettyStringForLable()
+//            "\(Int(DataBase.getTotalExpenses()))"
+        tableView.reloadData()
+        
+    
+    
+//        UINavigationBar.appearance().backgroundColor = UIColor(red: 85, green: 85, blue: 85, alpha: 1)
 
+        
+    }
+    
+    
+    @IBAction func statisticsButtonAction(_ sender: Any) {
+    
+        
+        
+        guard let statViewController = storyboard?.instantiateViewController(withIdentifier: "StatisticsViewController") as? StatisticsViewController else { return }
+        
+//        statViewController.delegate = self
+//        statViewController.book = data[indexPath.row]
+        
+        
+//        present(bookViewController, animated: true)
+        
+        navigationController?.pushViewController(statViewController, animated: true)
+
+        
+    }
+    
+    
+    @IBAction func historyButtonAction(_ sender: Any) {
+        
+        isChecked = !isChecked
+                    if isChecked {
+                        tableView.delegate = self
+                        tableView.dataSource = self
+                        historyButton.setTitle("История расходов 📉", for: .normal)
+                        historyButton.setTitleColor(.red, for: .normal)
+                        tableView.reloadData()
+                    } else {
+                        historyButton.setTitleColor(.init(patternImage: UIImage(named: "myGreen")!), for: .normal)
+                        historyButton.setTitle("История доходов 📈", for: .normal)
+                        
+                        tableView.reloadData()
+
+                        
+            tableView.delegate = NewTableGeneratorViewController.newTableGeneratorViewController
+            tableView.dataSource = NewTableGeneratorViewController.newTableGeneratorViewController
+                    }
+                
+       
+
+//        super.viewDidLoad()
+    
+    }
+  
+    
+   
+    
+
+        
+    
+
+
+}
+    
+    
+    
+    
+    
+func getPrettyStringForLable() -> String {
+    let costArray = Array(String(Int(DataBase.getTotalExpenses())))
+    var prettyString = ""
+    for (i, digit) in costArray.reversed().enumerated() {
+        prettyString = String(digit) + prettyString
+        if i % 3 == 2 {
+            prettyString = "," + prettyString
+        }
+    }
+    if prettyString.starts(with: ",") {
+        prettyString.removeFirst()
+    }
+    return "$" + prettyString
+}
+    
+func getFullExpenseArray() -> [ExpenseInfo] {
+    var expenseOperations: [ExpenseInfo] = []
+    var temporary: [ExpenseInfo] = []
+    
+    temporary = DataBase.getExpensesArrayIn(category: "Транспорт")
+    if temporary.count > 0{
+        for i in temporary {
+            expenseOperations.append(i)
+        }
+    }
+    temporary.removeAll()
+    
+    
+    temporary = DataBase.getExpensesArrayIn(category: "Шоппинг")
+    if temporary.count > 0{
+        for i in temporary {
+            expenseOperations.append(i)
+        }
+    }
+    temporary.removeAll()
+    
+    temporary = DataBase.getExpensesArrayIn(category: "Продукты")
+    if temporary.count > 0{
+        for i in temporary {
+            expenseOperations.append(i)
+        }
+    }
+    temporary.removeAll()
+    
+    temporary = DataBase.getExpensesArrayIn(category: "Здоровье")
+    if temporary.count > 0{
+        for i in temporary {
+            expenseOperations.append(i)
+        }
+    }
+    temporary.removeAll()
+    
+    temporary = DataBase.getExpensesArrayIn(category: "Кафе")
+    if temporary.count > 0{
+        for i in temporary {
+            expenseOperations.append(i)
+        }
+    }
+    temporary.removeAll()
+    
+    temporary = DataBase.getExpensesArrayIn(category: "Дом")
+    if temporary.count > 0{
+        for i in temporary {
+            expenseOperations.append(i)
+        }
+    }
+    temporary.removeAll()
+//    print("\(expenseOperations.count) + fdfdf" )
+    return expenseOperations
+}
+
+extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
+        
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       80
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(expenseOperations.count)
+
+       return expenseOperations.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileTableViewCell", for: indexPath) as?
+                ProfileTableViewCell else {return UITableViewCell() }
+//        print(expenseOperations.count)
+        cell.backgroundColor = UIColor.clear
+        cell.setData(expense: expenseOperations[indexPath.row])
+        return cell
+    }
+    
+    
 }

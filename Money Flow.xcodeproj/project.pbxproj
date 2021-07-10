@@ -37,6 +37,13 @@
 		E222857426938A030023F727 /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E222857326938A030023F727 /* CategoryStoryboard.storyboard */; };
 		E222857626938A320023F727 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222857526938A320023F727 /* CategoryViewController.swift */; };
 		E222857826938A860023F727 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222857726938A860023F727 /* CategoryTableViewCell.swift */; };
+		E2228582269485A10023F727 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2228581269485A10023F727 /* StatisticsViewController.swift */; };
+		E22285842694A1080023F727 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22285832694A1080023F727 /* ProfileTableViewCell.swift */; };
+		E22285922695D68D0023F727 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22285912695D68D0023F727 /* PieChart.swift */; };
+		E22285942695E6850023F727 /* PieChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22285932695E6850023F727 /* PieChatView.swift */; };
+		E2228598269722420023F727 /* Profile images.xcassets 15-07-44-315.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2228597269722420023F727 /* Profile images.xcassets 15-07-44-315.xcassets */; };
+		E222859A2697340B0023F727 /* NewTableGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22285992697340A0023F727 /* NewTableGeneratorViewController.swift */; };
+		E222859C26974D3B0023F727 /* StatisticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222859B26974D3A0023F727 /* StatisticsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +79,13 @@
 		E222857326938A030023F727 /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
 		E222857526938A320023F727 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		E222857726938A860023F727 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		E2228581269485A10023F727 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		E22285832694A1080023F727 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		E22285912695D68D0023F727 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		E22285932695E6850023F727 /* PieChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChatView.swift; sourceTree = "<group>"; };
+		E2228597269722420023F727 /* Profile images.xcassets 15-07-44-315.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Profile images.xcassets 15-07-44-315.xcassets"; path = "../../../Profile images.xcassets 15-07-44-315.xcassets"; sourceTree = "<group>"; };
+		E22285992697340A0023F727 /* NewTableGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableGeneratorViewController.swift; sourceTree = "<group>"; };
+		E222859B26974D3A0023F727 /* StatisticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +138,15 @@
 		442ED2B92690AFE600EA2C4A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E2228597269722420023F727 /* Profile images.xcassets 15-07-44-315.xcassets */,
 				44C40F582692192F007A1AB3 /* Profile.storyboard */,
 				44C40F5A26921953007A1AB3 /* ProfileViewController.swift */,
+				E2228581269485A10023F727 /* StatisticsViewController.swift */,
+				E22285832694A1080023F727 /* ProfileTableViewCell.swift */,
+				E22285912695D68D0023F727 /* PieChart.swift */,
+				E22285932695E6850023F727 /* PieChatView.swift */,
+				E22285992697340A0023F727 /* NewTableGeneratorViewController.swift */,
+				E222859B26974D3A0023F727 /* StatisticsTableViewCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -202,7 +223,6 @@
 			children = (
 				449BE69626939A0A00C0F2A1 /* RuslanTemplates */,
 				E222857D26938C810023F727 /* MaratTemplates */,
-				44E0F7E62694653F003E538F /* Media.xcassets */,
 			);
 			path = ScreenTemplates;
 			sourceTree = "<group>";
@@ -210,6 +230,7 @@
 		E222857D26938C810023F727 /* MaratTemplates */ = {
 			isa = PBXGroup;
 			children = (
+				44E0F7E62694653F003E538F /* Media.xcassets */,
 				E222857726938A860023F727 /* CategoryTableViewCell.swift */,
 				E222857526938A320023F727 /* CategoryViewController.swift */,
 				E2228571269389C60023F727 /* ProfileeViewController.swift */,
@@ -279,6 +300,7 @@
 				44C40F6526921BFE007A1AB3 /* Goals.storyboard in Resources */,
 				44E0F7EC2694681B003E538F /* CategoryCell.xib in Resources */,
 				449BE69C26939A0A00C0F2A1 /* AddScreen.storyboard in Resources */,
+				E2228598269722420023F727 /* Profile images.xcassets 15-07-44-315.xcassets in Resources */,
 				44E0F7E72694653F003E538F /* Media.xcassets in Resources */,
 				44E0F7E326945A02003E538F /* EmojiCell.xib in Resources */,
 				E222857426938A030023F727 /* CategoryStoryboard.storyboard in Resources */,
@@ -303,17 +325,23 @@
 				44E0F7E526945A44003E538F /* PopupScreenTemplate.swift in Sources */,
 				E222857626938A320023F727 /* CategoryViewController.swift in Sources */,
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
+				E22285842694A1080023F727 /* ProfileTableViewCell.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
 				44E0F7DE26945942003E538F /* PopupCollectionViewController.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
+				E2228582269485A10023F727 /* StatisticsViewController.swift in Sources */,
+				E22285922695D68D0023F727 /* PieChart.swift in Sources */,
 				44C40F6326921BD5007A1AB3 /* IncomesViewController.swift in Sources */,
+				E222859A2697340B0023F727 /* NewTableGeneratorViewController.swift in Sources */,
 				E222857826938A860023F727 /* CategoryTableViewCell.swift in Sources */,
 				44E0F7E226945A02003E538F /* EmojiCell.swift in Sources */,
 				44C40F5F26921A9C007A1AB3 /* ExpensesViewController.swift in Sources */,
 				44E0F7EB2694681B003E538F /* CategoryCell.swift in Sources */,
+				E222859C26974D3B0023F727 /* StatisticsTableViewCell.swift in Sources */,
 				449BE69A26939A0A00C0F2A1 /* AddScreenViewController.swift in Sources */,
 				E2228572269389C60023F727 /* ProfileeViewController.swift in Sources */,
+				E22285942695E6850023F727 /* PieChatView.swift in Sources */,
 				4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */,
 				44C40F6B26921C78007A1AB3 /* SettingsViewController.swift in Sources */,
 			);
