@@ -31,14 +31,15 @@ class DataBase {
     }
     
     static func check() {
-        if userDefaults.float(forKey: "totalIncome") == 0.0 && userDefaults.float(forKey: "totalExpenses") == 0.0 && userDefaults.dictionary(forKey: "limitsDictionary")?.count == 0 {
+        let limitsDictionaryIsPresent = userDefaults.dictionary(forKey: "limitsDictionary") != nil
+        if userDefaults.float(forKey: "totalIncome") == 0.0 && userDefaults.float(forKey: "totalExpenses") == 0.0 && !limitsDictionaryIsPresent {
             userDefaults.set(0.0, forKey: "totalIncome")
             userDefaults.set(0.0, forKey: "totalExpenses")
             userDefaults.set([String: Int](), forKey: "limitsDictionary")
         } else {
             totalIncome = CGFloat(userDefaults.float(forKey: "totalIncome"))
             totalExpenses = CGFloat(userDefaults.float(forKey: "totalExpenses"))
-            limitsDictionary = userDefaults.dictionary(forKey: "limitsDictionary") as! [String: Int]
+            limitsDictionary = userDefaults.dictionary(forKey: "limitsDictionary") as? [String: Int] ?? [String: Int]()
             if let data = userDefaults.data(forKey: "incomeTransactions") {
                 if let decoded = try? JSONDecoder().decode([IncomeInfo].self, from: data) {
                     incomeTransactions = decoded
@@ -62,6 +63,11 @@ class DataBase {
         return totalExpenses
     }
     
+    static func getLimitIn(category: String) -> Int? {
+        check()
+        return limitsDictionary[category]
+    }
+    
     static func addIncome(_ income: IncomeInfo) {
         check()
         totalIncome += income.worth
@@ -78,7 +84,8 @@ class DataBase {
     
     static func addLimitIn(category: String, _ value: Int) {
         check()
-        limitsDictionary[category] = value
+        let limit = limitsDictionary[category] ?? 0
+        limitsDictionary[category] = limit + value
         save()
     }
     
