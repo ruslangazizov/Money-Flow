@@ -10,10 +10,12 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var dollarLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var panelView: UIView!
     @IBOutlet weak var mainView: UIView!
+    @IBOutlet weak var limitLabel: UILabel!
     
     private let detailTableViewCellID = "DetailTableViewCell"
     var backgroundColor: UIColor!
@@ -36,6 +38,16 @@ class DetailViewController: UIViewController {
         panelView.layer.cornerRadius = 20
         panelView.dropShadow()
         valueLabel.text = String(Float(DataBase.getTotalExpensesIn(category: categoryName)))
+        if let limit = DataBase.getLimitIn(category: categoryName) {
+            limitLabel.isHidden = false
+            limitLabel.text = "Лимит: $\(limit)"
+            dollarLabel.frame.origin = CGPoint(x: dollarLabel.frame.origin.x, y: 29)
+            valueLabel.frame.origin = CGPoint(x: valueLabel.frame.origin.x, y: 29)
+        } else {
+            dollarLabel.frame.origin = CGPoint(x: dollarLabel.frame.origin.x, y: dollarLabel.frame.origin.y + 10)
+            valueLabel.frame.origin = CGPoint(x: valueLabel.frame.origin.x, y: valueLabel.frame.origin.y + 10)
+            limitLabel.isHidden = true
+        }
         
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: categoryName, style: .plain, target: nil, action: nil)
