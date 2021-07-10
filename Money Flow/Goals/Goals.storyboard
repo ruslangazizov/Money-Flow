@@ -83,7 +83,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IncomesTableViewCell" rowHeight="69" id="huh-HN-Vf5" customClass="TableViewCell" customModule="Money_Flow" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="69" id="huh-HN-Vf5" customClass="TableViewCell" customModule="Money_Flow" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="24.333333969116211" width="358" height="69"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="huh-HN-Vf5" id="L7v-GV-VUa">
@@ -264,6 +264,7 @@
                         <outlet property="nameTextField" destination="7Bu-g5-a4F" id="qMj-GN-DfV"/>
                         <outlet property="panelView" destination="KuA-xD-H6Z" id="9D2-T9-zr4"/>
                         <outlet property="saveButton" destination="U4D-dW-8Qv" id="aXR-Ar-4ch"/>
+                        <outlet property="warningLabel" destination="SV3-NG-qRF" id="Vax-B8-0wT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZ1-cJ-SVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
