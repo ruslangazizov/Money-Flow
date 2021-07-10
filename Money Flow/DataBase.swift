@@ -31,7 +31,7 @@ class DataBase {
     }
     
     static func check() {
-        if userDefaults.float(forKey: "totalIncome") == 0.0 && userDefaults.float(forKey: "totalExpenses") == 0.0 {
+        if userDefaults.float(forKey: "totalIncome") == 0.0 && userDefaults.float(forKey: "totalExpenses") == 0.0 && userDefaults.dictionary(forKey: "limitsDictionary")?.count == 0 {
             userDefaults.set(0.0, forKey: "totalIncome")
             userDefaults.set(0.0, forKey: "totalExpenses")
             userDefaults.set([String: Int](), forKey: "limitsDictionary")
