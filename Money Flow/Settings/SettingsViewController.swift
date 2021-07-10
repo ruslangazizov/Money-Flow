@@ -20,8 +20,8 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        limitbutton.layer.cornerRadius = 20
-        resetButton.layer.cornerRadius = 20
+        limitbutton.layer.cornerRadius = 10
+        resetButton.layer.cornerRadius = 10
     }
 
     @IBAction func goToLimits(_ sender: Any) {
