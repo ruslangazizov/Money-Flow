@@ -20,6 +20,13 @@
 		4406AA33269B32F200ECCA58 /* GoalsEmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4406AA2D269B32F200ECCA58 /* GoalsEmojiCell.xib */; };
 		4406AA34269B32F200ECCA58 /* GoalsEmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA2E269B32F200ECCA58 /* GoalsEmojiCell.swift */; };
 		4406AA35269B32F200ECCA58 /* GoalsPopupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA2F269B32F200ECCA58 /* GoalsPopupScreenViewController.swift */; };
+		4406AA41269B3F0E00ECCA58 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA3A269B3F0E00ECCA58 /* ProfileTableViewCell.swift */; };
+		4406AA42269B3F0E00ECCA58 /* PieChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA3B269B3F0E00ECCA58 /* PieChatView.swift */; };
+		4406AA43269B3F0E00ECCA58 /* Profile images.xcassets 15-07-44-315.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4406AA3C269B3F0E00ECCA58 /* Profile images.xcassets 15-07-44-315.xcassets */; };
+		4406AA44269B3F0E00ECCA58 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA3D269B3F0E00ECCA58 /* PieChart.swift */; };
+		4406AA45269B3F0E00ECCA58 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA3E269B3F0E00ECCA58 /* StatisticsViewController.swift */; };
+		4406AA46269B3F0E00ECCA58 /* NewTableGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA3F269B3F0E00ECCA58 /* NewTableGeneratorViewController.swift */; };
+		4406AA47269B3F0E00ECCA58 /* StatisticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA40269B3F0E00ECCA58 /* StatisticsTableViewCell.swift */; };
 		440E20CE26959F1F00F019A7 /* PopupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20C526959F1F00F019A7 /* PopupScreenViewController.swift */; };
 		440E20CF26959F1F00F019A7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20C726959F1F00F019A7 /* CategoryCell.swift */; };
 		440E20D026959F1F00F019A7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440E20C826959F1F00F019A7 /* CategoryCell.xib */; };
@@ -66,6 +73,13 @@
 		4406AA2D269B32F200ECCA58 /* GoalsEmojiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoalsEmojiCell.xib; sourceTree = "<group>"; };
 		4406AA2E269B32F200ECCA58 /* GoalsEmojiCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsEmojiCell.swift; sourceTree = "<group>"; };
 		4406AA2F269B32F200ECCA58 /* GoalsPopupScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsPopupScreenViewController.swift; sourceTree = "<group>"; };
+		4406AA3A269B3F0E00ECCA58 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		4406AA3B269B3F0E00ECCA58 /* PieChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChatView.swift; sourceTree = "<group>"; };
+		4406AA3C269B3F0E00ECCA58 /* Profile images.xcassets 15-07-44-315.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Profile images.xcassets 15-07-44-315.xcassets"; sourceTree = "<group>"; };
+		4406AA3D269B3F0E00ECCA58 /* PieChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		4406AA3E269B3F0E00ECCA58 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		4406AA3F269B3F0E00ECCA58 /* NewTableGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTableGeneratorViewController.swift; sourceTree = "<group>"; };
+		4406AA40269B3F0E00ECCA58 /* StatisticsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsTableViewCell.swift; sourceTree = "<group>"; };
 		440E20C526959F1F00F019A7 /* PopupScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupScreenViewController.swift; sourceTree = "<group>"; };
 		440E20C726959F1F00F019A7 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		440E20C826959F1F00F019A7 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
@@ -216,6 +230,13 @@
 		442ED2B92690AFE600EA2C4A /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4406AA3F269B3F0E00ECCA58 /* NewTableGeneratorViewController.swift */,
+				4406AA3D269B3F0E00ECCA58 /* PieChart.swift */,
+				4406AA3B269B3F0E00ECCA58 /* PieChatView.swift */,
+				4406AA3C269B3F0E00ECCA58 /* Profile images.xcassets 15-07-44-315.xcassets */,
+				4406AA3A269B3F0E00ECCA58 /* ProfileTableViewCell.swift */,
+				4406AA40269B3F0E00ECCA58 /* StatisticsTableViewCell.swift */,
+				4406AA3E269B3F0E00ECCA58 /* StatisticsViewController.swift */,
 				44C40F582692192F007A1AB3 /* Profile.storyboard */,
 				44C40F5A26921953007A1AB3 /* ProfileViewController.swift */,
 			);
@@ -342,6 +363,7 @@
 				44C40F6526921BFE007A1AB3 /* Goals.storyboard in Resources */,
 				44C40F5D26921A88007A1AB3 /* Expenses.storyboard in Resources */,
 				4406AA28269B2CF300ECCA58 /* SettingsCategoryCell.xib in Resources */,
+				4406AA43269B3F0E00ECCA58 /* Profile images.xcassets 15-07-44-315.xcassets in Resources */,
 				440E20D226959F1F00F019A7 /* EmojiCell.xib in Resources */,
 				44C40F6126921BB9007A1AB3 /* Incomes.storyboard in Resources */,
 				44C40F6926921C5D007A1AB3 /* Settings.storyboard in Resources */,
@@ -366,12 +388,14 @@
 				4406AA35269B32F200ECCA58 /* GoalsPopupScreenViewController.swift in Sources */,
 				4406AA1D269B274900ECCA58 /* LimitsViewController.swift in Sources */,
 				4406AA1A269B1DA200ECCA58 /* IncomesPopupScreenViewController.swift in Sources */,
+				4406AA41269B3F0E00ECCA58 /* ProfileTableViewCell.swift in Sources */,
 				440E20D426959F1F00F019A7 /* PopupScreenTemplate.swift in Sources */,
 				4406AA30269B32F200ECCA58 /* GoalsContainer.swift in Sources */,
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
 				4406AA27269B2CF300ECCA58 /* SettingsCategoryCell.swift in Sources */,
 				4406AA16269B196600ECCA58 /* IncomesAddScreenViewController.swift in Sources */,
 				440E20DB2695A68C00F019A7 /* DetailViewController.swift in Sources */,
+				4406AA46269B3F0E00ECCA58 /* NewTableGeneratorViewController.swift in Sources */,
 				4406AA1E269B274900ECCA58 /* SettingsPopupScreenViewController.swift in Sources */,
 				4406AA31269B32F200ECCA58 /* GoalsAddScreenViewController.swift in Sources */,
 				449BE685269352DA00C0F2A1 /* Category.swift in Sources */,
@@ -385,8 +409,12 @@
 				449BE682269352DA00C0F2A1 /* CategoryCollectionViewCell.swift in Sources */,
 				44C40F6326921BD5007A1AB3 /* IncomesViewController.swift in Sources */,
 				440E20D326959F1F00F019A7 /* EmojiCell.swift in Sources */,
+				4406AA42269B3F0E00ECCA58 /* PieChatView.swift in Sources */,
+				4406AA47269B3F0E00ECCA58 /* StatisticsTableViewCell.swift in Sources */,
 				4406AA0D269B193B00ECCA58 /* IncomesTableViewCell.swift in Sources */,
+				4406AA44269B3F0E00ECCA58 /* PieChart.swift in Sources */,
 				44C40F5F26921A9C007A1AB3 /* ExpensesViewController.swift in Sources */,
+				4406AA45269B3F0E00ECCA58 /* StatisticsViewController.swift in Sources */,
 				4428BE092690A698009A4B6A /* SceneDelegate.swift in Sources */,
 				44C40F6B26921C78007A1AB3 /* SettingsViewController.swift in Sources */,
 				4406AA34269B32F200ECCA58 /* GoalsEmojiCell.swift in Sources */,
