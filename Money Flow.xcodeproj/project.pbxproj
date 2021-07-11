@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4409B90C2699A7300011AC3E /* AddScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409B90B2699A7300011AC3E /* AddScreenViewController.swift */; };
 		4409B90E2699A9350011AC3E /* PopUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409B90D2699A9350011AC3E /* PopUpScreenViewController.swift */; };
-		4409B9102699AA630011AC3E /* PopUpScreenTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409B90F2699AA630011AC3E /* PopUpScreenTemplate.swift */; };
+		4409B9102699AA630011AC3E /* PopupScreenTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409B90F2699AA630011AC3E /* PopupScreenTemplate.swift */; };
 		4409B9342699B49E0011AC3E /* GoalsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409B9332699B49E0011AC3E /* GoalsContainer.swift */; };
 		4409B9362699BEE50011AC3E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4409B9352699BEE50011AC3E /* TableViewCell.swift */; };
 		4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4428BE062690A698009A4B6A /* AppDelegate.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		4409B90B2699A7300011AC3E /* AddScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScreenViewController.swift; sourceTree = "<group>"; };
 		4409B90D2699A9350011AC3E /* PopUpScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpScreenViewController.swift; sourceTree = "<group>"; };
-		4409B90F2699AA630011AC3E /* PopUpScreenTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpScreenTemplate.swift; sourceTree = "<group>"; };
+		4409B90F2699AA630011AC3E /* PopupScreenTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupScreenTemplate.swift; sourceTree = "<group>"; };
 		4409B9332699B49E0011AC3E /* GoalsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsContainer.swift; sourceTree = "<group>"; };
 		4409B9352699BEE50011AC3E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4428BE032690A698009A4B6A /* Money Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +149,7 @@
 				44C40F6626921C0F007A1AB3 /* GoalsViewController.swift */,
 				4409B90B2699A7300011AC3E /* AddScreenViewController.swift */,
 				4409B90D2699A9350011AC3E /* PopUpScreenViewController.swift */,
-				4409B90F2699AA630011AC3E /* PopUpScreenTemplate.swift */,
+				4409B90F2699AA630011AC3E /* PopupScreenTemplate.swift */,
 				4409B9332699B49E0011AC3E /* GoalsContainer.swift */,
 				4409B9352699BEE50011AC3E /* TableViewCell.swift */,
 			);
@@ -264,7 +264,7 @@
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
 				4428BE072690A698009A4B6A /* AppDelegate.swift in Sources */,
 				44C40F5B26921953007A1AB3 /* ProfileViewController.swift in Sources */,
-				4409B9102699AA630011AC3E /* PopUpScreenTemplate.swift in Sources */,
+				4409B9102699AA630011AC3E /* PopupScreenTemplate.swift in Sources */,
 				4409B90C2699A7300011AC3E /* AddScreenViewController.swift in Sources */,
 				44683105269627620053320F /* DataBase.swift in Sources */,
 				4409B9342699B49E0011AC3E /* GoalsContainer.swift in Sources */,
