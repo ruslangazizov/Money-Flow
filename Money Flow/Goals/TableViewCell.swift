@@ -13,6 +13,15 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var image1View: UIImageView!
+    @IBOutlet weak var activeSlider: UISlider!
+    @IBOutlet var label: UILabel!
+    
+    
+    @IBAction func sliderDidSlide (_ sender: UISlider){
+        let value = sender.value
+        label.text = "\(value)%"
+    }
+    
     
     
     override func awakeFromNib() {
@@ -25,6 +34,8 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
     
     func setData(_ income: IncomeInfo) {
 //        cellImage.image = UIImage(named: "Goals")

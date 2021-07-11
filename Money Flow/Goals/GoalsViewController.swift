@@ -14,6 +14,8 @@ class GoalsViewController: UIViewController {
     @IBOutlet weak var panelView: UIView!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var addButton: UIButton!
+
+    
     
     private let TableViewCellID = "TableViewCell"
         
@@ -22,7 +24,7 @@ class GoalsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GoalsContainer.add(element: IncomeInfo(source: "Hi", date: "11.11.2011", icon: "😃", worth: 5000))
+        //GoalsContainer.add(element: IncomeInfo(source: "Машина", date: "11.11.2011", icon: "😃", worth: 5000))
         
         panelView.layer.cornerRadius = 20
         panelView.alpha = 0.95
@@ -31,8 +33,9 @@ class GoalsViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        valueLabel.text = String(Float(DataBase.getTotalIncome()))
-        data = DataBase.getIncomeArray()
+//        valueLabel.text = String(Float(DataBase.getTotalIncome()))
+        data = GoalsContainer.getArray()
+        
     }
         
     @IBAction func addButtonAction(_ sender: Any) {
@@ -44,12 +47,13 @@ class GoalsViewController: UIViewController {
     }
     
     func reloadData() {
-        valueLabel.text = String(Float(DataBase.getTotalIncome()))
-        data = DataBase.getIncomeArray()
+//        valueLabel.text = String(Float(DataBase.getTotalIncome()))
+        data = GoalsContainer.getArray()
         tableView.reloadData()
     }
-        
+
 }
+    
 
 extension GoalsViewController: UITableViewDataSource {
     
@@ -59,16 +63,14 @@ extension GoalsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellID) as? TableViewCell ?? TableViewCell()
-        print(data.count)
-        
-        print(data[indexPath.row].date)
+  
         cell.setData(data[indexPath.row])
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        70
+        120
     }
     
 }
