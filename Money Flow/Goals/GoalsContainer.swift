@@ -32,4 +32,9 @@ class GoalsContainer {
         }
         return goalsArray
     }
+    
+    static func deleteAll() {
+        goalsArray.removeAll()
+        save()
+    }
 }

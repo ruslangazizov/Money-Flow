@@ -39,6 +39,7 @@ class SettingsViewController: UIViewController {
 
         let acceptAction = UIAlertAction(title: "Да", style: .default) { _ in
             DataBase.deleteAllData()
+            GoalsContainer.deleteAll()
         }
 
         alert.addAction(cancelAction)
