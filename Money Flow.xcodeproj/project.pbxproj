@@ -10,6 +10,10 @@
 		4406AA0D269B193B00ECCA58 /* IncomesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA0C269B193B00ECCA58 /* IncomesTableViewCell.swift */; };
 		4406AA16269B196600ECCA58 /* IncomesAddScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA11269B196600ECCA58 /* IncomesAddScreenViewController.swift */; };
 		4406AA1A269B1DA200ECCA58 /* IncomesPopupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA19269B1DA200ECCA58 /* IncomesPopupScreenViewController.swift */; };
+		4406AA1D269B274900ECCA58 /* LimitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA1B269B274900ECCA58 /* LimitsViewController.swift */; };
+		4406AA1E269B274900ECCA58 /* SettingsPopupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA1C269B274900ECCA58 /* SettingsPopupScreenViewController.swift */; };
+		4406AA27269B2CF300ECCA58 /* SettingsCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406AA25269B2CF300ECCA58 /* SettingsCategoryCell.swift */; };
+		4406AA28269B2CF300ECCA58 /* SettingsCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4406AA26269B2CF300ECCA58 /* SettingsCategoryCell.xib */; };
 		440E20CE26959F1F00F019A7 /* PopupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20C526959F1F00F019A7 /* PopupScreenViewController.swift */; };
 		440E20CF26959F1F00F019A7 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E20C726959F1F00F019A7 /* CategoryCell.swift */; };
 		440E20D026959F1F00F019A7 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440E20C826959F1F00F019A7 /* CategoryCell.xib */; };
@@ -46,6 +50,10 @@
 		4406AA0C269B193B00ECCA58 /* IncomesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomesTableViewCell.swift; sourceTree = "<group>"; };
 		4406AA11269B196600ECCA58 /* IncomesAddScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomesAddScreenViewController.swift; sourceTree = "<group>"; };
 		4406AA19269B1DA200ECCA58 /* IncomesPopupScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomesPopupScreenViewController.swift; sourceTree = "<group>"; };
+		4406AA1B269B274900ECCA58 /* LimitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsViewController.swift; sourceTree = "<group>"; };
+		4406AA1C269B274900ECCA58 /* SettingsPopupScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPopupScreenViewController.swift; sourceTree = "<group>"; };
+		4406AA25269B2CF300ECCA58 /* SettingsCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCategoryCell.swift; sourceTree = "<group>"; };
+		4406AA26269B2CF300ECCA58 /* SettingsCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsCategoryCell.xib; sourceTree = "<group>"; };
 		440E20C526959F1F00F019A7 /* PopupScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupScreenViewController.swift; sourceTree = "<group>"; };
 		440E20C726959F1F00F019A7 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		440E20C826959F1F00F019A7 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
@@ -98,6 +106,15 @@
 				4406AA11269B196600ECCA58 /* IncomesAddScreenViewController.swift */,
 			);
 			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		4406AA24269B2CF300ECCA58 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4406AA25269B2CF300ECCA58 /* SettingsCategoryCell.swift */,
+				4406AA26269B2CF300ECCA58 /* SettingsCategoryCell.xib */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		440E20C426959F1F00F019A7 /* ThirdScreen */ = {
@@ -230,6 +247,9 @@
 		44C40F572692190E007A1AB3 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				4406AA24269B2CF300ECCA58 /* Category */,
+				4406AA1B269B274900ECCA58 /* LimitsViewController.swift */,
+				4406AA1C269B274900ECCA58 /* SettingsPopupScreenViewController.swift */,
 				44C40F6826921C5D007A1AB3 /* Settings.storyboard */,
 				44C40F6A26921C78007A1AB3 /* SettingsViewController.swift */,
 			);
@@ -295,6 +315,7 @@
 			files = (
 				44C40F6526921BFE007A1AB3 /* Goals.storyboard in Resources */,
 				44C40F5D26921A88007A1AB3 /* Expenses.storyboard in Resources */,
+				4406AA28269B2CF300ECCA58 /* SettingsCategoryCell.xib in Resources */,
 				440E20D226959F1F00F019A7 /* EmojiCell.xib in Resources */,
 				44C40F6126921BB9007A1AB3 /* Incomes.storyboard in Resources */,
 				44C40F6926921C5D007A1AB3 /* Settings.storyboard in Resources */,
@@ -315,11 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4406AA1D269B274900ECCA58 /* LimitsViewController.swift in Sources */,
 				4406AA1A269B1DA200ECCA58 /* IncomesPopupScreenViewController.swift in Sources */,
 				440E20D426959F1F00F019A7 /* PopupScreenTemplate.swift in Sources */,
 				44C40F6726921C10007A1AB3 /* GoalsViewController.swift in Sources */,
+				4406AA27269B2CF300ECCA58 /* SettingsCategoryCell.swift in Sources */,
 				4406AA16269B196600ECCA58 /* IncomesAddScreenViewController.swift in Sources */,
 				440E20DB2695A68C00F019A7 /* DetailViewController.swift in Sources */,
+				4406AA1E269B274900ECCA58 /* SettingsPopupScreenViewController.swift in Sources */,
 				449BE685269352DA00C0F2A1 /* Category.swift in Sources */,
 				44683107269630BA0053320F /* DataBase.swift in Sources */,
 				4428BE0B2690A698009A4B6A /* ViewController.swift in Sources */,
