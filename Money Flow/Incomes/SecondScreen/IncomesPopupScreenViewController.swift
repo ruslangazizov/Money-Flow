@@ -1,5 +1,5 @@
 //
-//  PopupScreenViewController.swift
+//  IncomesPopupScreenViewController.swift
 //  Money Flow
 //
 //  Created by Руслан on 07.07.2021.
@@ -7,15 +7,13 @@
 
 import UIKit
 
-class PopupScreenViewController: UIViewController {
+class IncomesPopupScreenViewController: UIViewController, PopupScreenProtocol {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    weak var delegate: AddScreenViewController?
-    
+    weak var delegate: IncomesAddScreenViewController?
   
     private let (data, cellID, itemsPerRowCount, widthBetweenItemsInLine) = PopupScreenTemplate.getEmojiInformation()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +29,7 @@ class PopupScreenViewController: UIViewController {
 
 }
 
-extension PopupScreenViewController: UICollectionViewDataSource {
+extension IncomesPopupScreenViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return data.count
     }
@@ -40,17 +38,11 @@ extension PopupScreenViewController: UICollectionViewDataSource {
         var cell: UICollectionViewCell!
         if cellID == "EmojiCell" {
             cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as? EmojiCell ?? EmojiCell()
-        } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as? CategoryCell ?? CategoryCell()
         }
         
-        // #warning если нужны эмоджи, то используйте этот if, если категории - то второй if
         if let cell = cell as? EmojiCell {
             cell.setupCell(data[indexPath.item])
             cell.delegate = self
-        } else if let cell = cell as? CategoryCell {
-//            cell.setupCell(data[indexPath.item])
-//            cell.delegate = self
         }
     
         return cell
@@ -58,11 +50,11 @@ extension PopupScreenViewController: UICollectionViewDataSource {
     
 }
 
-extension PopupScreenViewController: UICollectionViewDelegate {
+extension IncomesPopupScreenViewController: UICollectionViewDelegate {
     
 }
 
-extension PopupScreenViewController: UICollectionViewDelegateFlowLayout {
+extension IncomesPopupScreenViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let margin: CGFloat = cellID == "EmojiCell" ? 15 : 25
         let paddingWidth = margin * 2 + widthBetweenItemsInLine * (itemsPerRowCount - 1)

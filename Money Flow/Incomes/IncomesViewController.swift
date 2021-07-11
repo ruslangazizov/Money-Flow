@@ -34,7 +34,7 @@ class IncomesViewController: UIViewController {
     }
         
     @IBAction func addButtonAction(_ sender: Any) {
-        let addScreenViewController = storyboard?.instantiateViewController(identifier: "AddScreenViewController") as? AddScreenViewController ?? AddScreenViewController()
+        let addScreenViewController = storyboard?.instantiateViewController(identifier: "IncomesAddScreenViewController") as? IncomesAddScreenViewController ?? IncomesAddScreenViewController()
         
         addScreenViewController.delegate = self
         
@@ -69,17 +69,4 @@ extension IncomesViewController: UITableViewDataSource {
 
 extension IncomesViewController: UITableViewDelegate {
     
-}
-
-extension UIView {
-    func dropShadow() {
-        layer.masksToBounds = false
-        layer.shadowColor = UIColor.lightGray.cgColor
-        layer.shadowOpacity = 0.4
-        layer.shadowOffset = CGSize(width: 0, height: 0)
-        layer.shadowRadius = 10
-        layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-        layer.shouldRasterize = true
-        layer.rasterizationScale = UIScreen.main.scale
-    }
 }

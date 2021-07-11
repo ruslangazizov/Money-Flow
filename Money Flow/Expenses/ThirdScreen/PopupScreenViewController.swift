@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PopupScreenViewController: UIViewController {
+class PopupScreenViewController: UIViewController, PopupScreenProtocol {
 
     @IBOutlet weak var collectionView: UICollectionView!
     

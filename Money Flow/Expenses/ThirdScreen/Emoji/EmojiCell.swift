@@ -7,11 +7,15 @@
 
 import UIKit
 
+protocol PopupScreenProtocol: UIViewController {
+    func updateChoiceWith(_ cellData: String)
+}
+
 class EmojiCell: UICollectionViewCell {
 
     @IBOutlet weak var emojiLabel: UILabel!
     
-    weak var delegate: PopupScreenViewController?
+    weak var delegate: PopupScreenProtocol?
     
     override func awakeFromNib() {
         super.awakeFromNib()
