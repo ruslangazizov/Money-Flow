@@ -122,6 +122,7 @@ class DataBase {
         totalExpenses = 0.0
         incomeTransactions.removeAll()
         expensesTransactions.removeAll()
+        limitsDictionary.removeAll()
         save()
     }
     
