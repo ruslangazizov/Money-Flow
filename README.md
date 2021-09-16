@@ -58,8 +58,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
+<p align="middle">
+  <img src="images/screen1.png" width="33%" />
+  <img src="images/screen2.png" width="33%" />
+  <img src="images/screen3.png" width="33%" />
+  <img src="images/screen4.png" width="33%" />
+  <img src="images/screen5.png" width="33%" />
+  <img src="images/screen6.png" width="33%" />
+</p>
 
 
 <!-- GETTING STARTED -->
@@ -132,3 +138,5 @@ Project Link: [https://github.com/etimesoy/Money-Flow](https://github.com/etimes
 [issues-url]: https://github.com/etimesoy/Money-Flow/issues
 [license-shield]: https://img.shields.io/github/license/etimesoy/Money-Flow.svg?style=for-the-badge
 [license-url]: https://github.com/etimesoy/Money-Flow/blob/master/LICENSE
+[product-screenshot-1]: /images/screen1.png
+[product-screenshot-2]: /images/screen2.png
