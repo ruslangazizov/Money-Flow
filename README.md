@@ -122,14 +122,13 @@ Project Link: [https://github.com/etimesoy/Money-Flow](https://github.com/etimes
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/etimesoy/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/etimesoy/Money-Flow.svg?style=for-the-badge
 [contributors-url]: https://github.com/etimesoy/Money-Flow/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/etimesoy/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/etimesoy/Money-Flow.svg?style=for-the-badge
 [forks-url]: https://github.com/etimesoy/Money-Flow/network/members
-[stars-shield]: https://img.shields.io/github/stars/etimesoy/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/etimesoy/Money-Flow.svg?style=for-the-badge
 [stars-url]: https://github.com/etimesoy/Money-Flow/stargazers
-[issues-shield]: https://img.shields.io/github/issues/etimesoy/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/etimesoy/Money-Flow.svg?style=for-the-badge
 [issues-url]: https://github.com/etimesoy/Money-Flow/issues
-[license-shield]: https://img.shields.io/github/license/etimesoy/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/etimesoy/Money-Flow.svg?style=for-the-badge
 [license-url]: https://github.com/etimesoy/Money-Flow/blob/master/LICENSE
