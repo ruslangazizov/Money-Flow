@@ -36,15 +36,8 @@
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -73,21 +66,27 @@
 
 To get a local copy up and running follow these simple steps.
 
-### Installation
-
 1. Clone the repo
    ```sh
    git clone https://github.com/etimesoy/Money-Flow.git
    ```
+2. Change current directory to Money-Flow
+   ```sh
+   cd Money-Flow
+   ```
+3. Open Money Flow.xcodeproj file
+   ```sh
+   open Money\ Flow.xcodeproj
+   ```
+4. After Xcode opens, launch the app using a simulator or your device by pressing Cmd+R
 
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. 
-Additional screenshots, code examples and demos work well in this space. 
-You may also link to more resources.
+Add expenses (in different categories), incomes, limits (for expenses in categories) and goals. 
+You can also enjoy beautiful charts with info about expenses and incomes.
 
 
 
